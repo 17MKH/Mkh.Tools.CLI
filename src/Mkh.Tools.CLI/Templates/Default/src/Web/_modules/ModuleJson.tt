@@ -1,0 +1,2 @@
+﻿<#@ template language="C#" #>
+{"Id": <#= _model.Module.No + 6220 #>,"Name":"<#= _model.Module.Name #>","Code":"<#= _model.Module.Code #>","Icon":"<#= _model.Module.Icon #>","Version":"1.0.0","Description":"17MKH Module <#= _model.Module.Code #>(<#= _model.Module.Name #>) - Web"}

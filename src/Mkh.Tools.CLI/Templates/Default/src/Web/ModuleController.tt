@@ -1,0 +1,11 @@
+﻿<#@ template language="C#" #>
+using Microsoft.AspNetCore.Mvc;
+using Mkh.Module.Web;
+
+namespace Mkh.Mod.<#= _model.Module.Code #>.Web;
+
+[Area("<#= _model.Module.Code #>")]
+public abstract class ModuleController : ControllerAbstract
+{
+
+}

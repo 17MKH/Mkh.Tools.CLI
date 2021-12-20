@@ -1,0 +1,327 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<PackAsTool>true</PackAsTool>
+		<ToolCommandName>mkh</ToolCommandName>
+		<AssemblyName>Mkh.Tools.CLI</AssemblyName>
+		<RootNamespace>Mkh.Tools.CLI</RootNamespace>
+		<Version>1.0.0</Version>
+		<PackageOutputPath>../../_packages</PackageOutputPath>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Http" Version="6.0.0" />
+		<PackageReference Include="System.CodeDom" Version="6.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="Templates\Default\build\ModuleBuildTargets.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>ModuleBuildTargets.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\Dockerfile.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>Dockerfile.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\Gitignore.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>Gitignore.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\NugetPublishShell.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>NugetPublishShell.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\Solution.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>Solution.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\Core\Infrastructure\CacheKeys.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>CacheKeys.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\Core\Infrastructure\Config.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>Config.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\Core\Infrastructure\DbContext.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>DbContext.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\Core\Infrastructure\ModuleServicesConfigurator.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>ModuleServicesConfigurator.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\UI\Web\Env.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>Env.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\UI\Web\EnvDevelopment.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>EnvDevelopment.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\UI\Web\Eslintrc.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>Eslintrc.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\UI\Web\IndexHtml.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>IndexHtml.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\UI\Web\Npmrc.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>Npmrc.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\UI\Web\PackageJson.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>PackageJson.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\UI\Web\Prettierrc.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>Prettierrc.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\UI\Web\src\IndexJs.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>IndexJs.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\UI\Web\src\MainJs.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>MainJs.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\UI\Web\src\store\StoreJs.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>StoreJs.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\UI\Web\ViteConfig.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>ViteConfig.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\UI\Web\VsCodeConfig.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>VsCodeConfig.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\WebHost\Appsettings.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>Appsettings.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\WebHost\AppsettingsDevelopment.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>AppsettingsDevelopment.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\WebHost\AppsettingsLocal.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>AppsettingsLocal.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\WebHost\Csproj.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>Csproj.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\WebHost\Program.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>Program.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\WebHost\Properties\LaunchSettings.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>LaunchSettings.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\Web\Csproj.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>Csproj.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\Web\ModuleController.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>ModuleController.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\Web\_modules\ModuleJson.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>ModuleJson.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\Readme.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>Readme.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\Core\Csproj.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>Csproj.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\DirectoryBuildProps.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>DirectoryBuildProps.cs</LastGenOutput>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="Templates\Default\build\ModuleBuildTargets.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>ModuleBuildTargets.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\Dockerfile.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Dockerfile.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\Gitignore.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Gitignore.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\Readme.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Readme.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\Solution.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Solution.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\DirectoryBuildProps.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>DirectoryBuildProps.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\Core\Csproj.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Csproj.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\Core\Infrastructure\DbContext.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>DbContext.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\Core\Infrastructure\Config.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Config.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\Web\ModuleController.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>ModuleController.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\Core\Infrastructure\ModuleServicesConfigurator.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>ModuleServicesConfigurator.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\Core\Infrastructure\CacheKeys.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>CacheKeys.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\Web\Csproj.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Csproj.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\WebHost\Csproj.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Csproj.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\WebHost\Program.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Program.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\WebHost\Appsettings.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Appsettings.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\WebHost\AppsettingsDevelopment.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>AppsettingsDevelopment.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\WebHost\Properties\LaunchSettings.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>LaunchSettings.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\WebHost\AppsettingsLocal.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>AppsettingsLocal.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\Web\_modules\ModuleJson.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>ModuleJson.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\UI\Web\ViteConfig.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>ViteConfig.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\UI\Web\PackageJson.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>PackageJson.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\UI\Web\Prettierrc.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Prettierrc.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\UI\Web\Eslintrc.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Eslintrc.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\UI\Web\VsCodeConfig.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>VsCodeConfig.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\UI\Web\src\MainJs.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>MainJs.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\UI\Web\src\IndexJs.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>IndexJs.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\UI\Web\src\store\StoreJs.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>StoreJs.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\UI\Web\IndexHtml.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>IndexHtml.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\UI\Web\Env.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Env.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\UI\Web\EnvDevelopment.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>EnvDevelopment.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\NugetPublishShell.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>NugetPublishShell.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\UI\Web\Npmrc.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Npmrc.tt</DependentUpon>
+		</Compile>
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,16 @@
+﻿<#@ template language="C#" #>
+import { configure } from 'mkh-ui'
+import 'mkh-mod-admin'
+import './index'
+
+configure({
+  http: {
+    global: {
+      baseURL: 'http://localhost:<#= _model.Module.No + 6220 #>/api/',
+    },
+  },
+  beforeMount({ config }) {
+    config.component.login = 'k'
+    config.site.title = '<#= _model.Module.Remarks #>'
+  },
+})

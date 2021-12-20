@@ -1,0 +1,12 @@
+﻿<#@ template language="C#" #>
+using Mkh.Utils.Config;
+
+namespace Mkh.Mod.<#= _model.Module.Code #>.Core.Infrastructure;
+
+/// <summary>
+/// <#= _model.Module.Remarks #>配置类
+/// </summary>
+public class <#= _model.Module.Code #>Config : IConfig
+{
+
+}

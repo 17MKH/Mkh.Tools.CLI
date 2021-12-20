@@ -1,0 +1,11 @@
+﻿<#@ template language="C#" #>
+using Mkh.Data.Core;
+
+namespace Mkh.Mod.<#= _model.Module.Code #>.Core.Infrastructure;
+
+/// <summary>
+/// <#= _model.Module.Remarks #>模块数据库上下文
+/// </summary>
+public class <#= _model.Module.Code #>DbContext : DbContext
+{
+}

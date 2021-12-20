@@ -1,0 +1,20 @@
+﻿<#@ template language="C#" #>
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Mkh.Data.Adapter.MySql" Version="<#= _model.NuGetPackageVersions.Data_Adapter_MySql #>" />
+		<PackageReference Include="Mkh.Data.Adapter.Sqlite" Version="<#= _model.NuGetPackageVersions.Data_Adapter_MySql #>" />
+		<PackageReference Include="Mkh.Data.Adapter.SqlServer" Version="<#= _model.NuGetPackageVersions.Data_Adapter_MySql #>" />
+		<PackageReference Include="Mkh.Host.Web" Version="<#= _model.NuGetPackageVersions.Host_Web #>" />
+		<PackageReference Include="Mkh.Mod.Admin.Web" Version="<#= _model.NuGetPackageVersions.Mod_Admin_Web #>" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Web\Web.csproj" />
+	</ItemGroup>
+
+</Project>

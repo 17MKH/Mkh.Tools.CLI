@@ -1,0 +1,19 @@
+﻿<#@ template language="C#" #>
+using System;
+using Mkh.Utils.Annotations;
+
+namespace Mkh.Mod.<#= _model.Module.Code #>.Core.Infrastructure;
+
+/// <summary>
+/// <#= _model.Module.Remarks #>模块缓存键
+/// </summary>
+[Singleton]
+public class <#= _model.Module.Code #>CacheKeys
+{
+    ///// <summary>
+    ///// 示例代码：验证码
+    ///// </summary>
+    ///// <param name="id">验证码ID</param>
+    ///// <returns></returns>
+    //public string VerifyCode(string id) => $"ADMIN:VERIFY_CODE:{id}";
+}

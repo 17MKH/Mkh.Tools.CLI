@@ -1,0 +1,57 @@
+﻿<#@ template language="C#" #>
+{
+  //主机配置
+  "Host": {
+    //绑定URL
+    "Urls": "http://*:<#= _model.Module.No + 6220 #>"
+  },
+  //Serilog日志配置
+  "Serilog": {
+    "MinimumLevel": {
+      "Default": "Error",
+      "Override": {
+        "Microsoft": "Error",
+        "System": "Error"
+      }
+    },
+    "WriteTo": [
+      //输出到文件
+      {
+        "Name": "File",
+        "Args": {
+          //文件路径
+          "path": "log/log.log",
+          //文件滚动方式
+          "rollingInterval": "Day",
+          //消息输出格式
+          "outputTemplate": "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] {Message:lj}{NewLine}{Exception}",
+          //文件数量
+          "retainedFileCountLimit": 60,
+          //使用缓冲，提高写入效率
+          "buffered": false
+        }
+      }
+    ]
+  },
+  //MKH框架本身的配置
+  "Mkh": {
+    //模块列表
+    "Modules": {
+      "Admin": {
+        "Db": {
+          "Provider": 2
+        }
+      },
+      "<#= _model.Module.Code #>": {
+        //模块数据库配置
+        "Db": {
+          "Provider": 2
+        },
+        //模块配置信息
+        "Config": {
+        }
+      }
+    }
+  }
+}
+

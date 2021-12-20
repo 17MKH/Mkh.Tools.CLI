@@ -1,0 +1,15 @@
+﻿<#@ template language="C#" #>
+{
+  "profiles": {
+    "WebHost": {
+      "commandName": "Project",
+      "dotnetRunMessages": "true",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "http://localhost:<#= _model.Module.No + 6220 #>",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Local"
+      }
+    }
+  }
+}

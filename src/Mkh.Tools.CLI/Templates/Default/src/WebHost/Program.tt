@@ -1,0 +1,12 @@
+﻿<#@ template language="C#" #>
+using Mkh.Host.Web;
+
+namespace Mkh.Mod.<#= _model.Module.Code #>.WebHost;
+
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        new HostBootstrap(args).Run();
+    }
+}

@@ -1,0 +1,2 @@
+﻿<#@ template language="C#" #>
+import '$mkh-mod-<#= _model.Module.Code.ToLower() #>'
