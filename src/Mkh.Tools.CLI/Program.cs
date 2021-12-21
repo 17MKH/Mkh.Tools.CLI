@@ -6,8 +6,53 @@ namespace Mkh.Tools.CLI;
 
 public class Program
 {
-    static void Main()
+    static void Main(string[] args)
     {
+        if (args.Length > 0)
+        {
+            var cmd = args[0];
+            switch (cmd)
+            {
+                case "new":
+                    CreateModule();
+                    return;
+                case "-v":
+                    WriteVersion();
+                    return;
+                case "-h":
+                    WriteUsage();
+                    return;
+            }
+        }
+
+        CreateModule();
+    }
+
+    /// <summary>
+    /// 输出用法
+    /// </summary>
+    static void WriteUsage()
+    {
+        Console.WriteLine("用法说明:");
+        Console.WriteLine("mkh new       : 创建模块");
+        Console.WriteLine("mkh -h        : 查看帮助");
+        Console.WriteLine("mkh -v        : 查看版本号");
+    }
+
+    /// <summary>
+    /// 输出版本号
+    /// </summary>
+    static void WriteVersion()
+    {
+        Console.WriteLine("当前版本号：" + typeof(Program).Assembly.GetName().Version);
+    }
+
+    /// <summary>
+    /// 创建模块
+    /// </summary>
+    static void CreateModule()
+    {
+
         Console.ForegroundColor = ConsoleColor.Yellow;
         Console.WriteLine($"您正在使用17MKH CLI({typeof(Program).Assembly.GetName().Version})创建模块!");
 

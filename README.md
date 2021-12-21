@@ -10,10 +10,8 @@
 dotnet tool install --global mkh.tools.cli
 ```
 
-![](./img/20211221002452.png)
+> 安装成功后即可通过`mkh new`命令创建模块
 
-> 安装成功后即可通过`mkh`命令创建模块
-
-![](./img/20211221002720.png)
+> 通过`mkh -v`命令查看当前版本号
 
 您也可以通过官方网站首页 [https://www.17mkh.com/](https://www.17mkh.com/) 的视频介绍来学习如何使用本脚手架。
