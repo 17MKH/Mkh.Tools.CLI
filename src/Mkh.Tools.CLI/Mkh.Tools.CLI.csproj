@@ -8,11 +8,12 @@
 		<ToolCommandName>mkh</ToolCommandName>
 		<AssemblyName>Mkh.Tools.CLI</AssemblyName>
 		<RootNamespace>Mkh.Tools.CLI</RootNamespace>
-		<Version>1.0.2</Version>
+		<Version>1.0.3</Version>
 		<PackageOutputPath>../../_packages</PackageOutputPath>
 	</PropertyGroup>
 
 	<ItemGroup>
+		<PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="4.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Http" Version="6.0.0" />
 		<PackageReference Include="System.CodeDom" Version="6.0.0" />
 	</ItemGroup>
@@ -322,6 +323,12 @@
 			<AutoGen>True</AutoGen>
 			<DependentUpon>Npmrc.tt</DependentUpon>
 		</Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Templates\Default\NugetPublishShell.cs">
+	    <DesignTime>True</DesignTime>
+	  </Compile>
 	</ItemGroup>
 
 </Project>

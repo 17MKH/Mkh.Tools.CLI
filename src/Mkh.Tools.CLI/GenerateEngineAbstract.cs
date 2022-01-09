@@ -13,6 +13,12 @@ public class GenerateEngineAbstract : IGenerateEngine
 
     public virtual void Build(GenerateModel model)
     {
+        if (Directory.Exists(model.CodeDir))
+        {
+            Console.WriteLine($"代码目录({model.CodeDir})已存在，请手动移除后再创建。");
+            return;
+        }
+
         if (!Directory.Exists(model.CodeDir))
             Directory.CreateDirectory(model.CodeDir);
 
