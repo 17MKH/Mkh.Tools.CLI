@@ -8,7 +8,7 @@
 		<ToolCommandName>mkh</ToolCommandName>
 		<AssemblyName>Mkh.Tools.CLI</AssemblyName>
 		<RootNamespace>Mkh.Tools.CLI</RootNamespace>
-		<Version>1.0.3</Version>
+		<Version>1.0.4</Version>
 		<PackageOutputPath>../../_packages</PackageOutputPath>
 	</PropertyGroup>
 
@@ -327,6 +327,15 @@
 
 	<ItemGroup>
 	  <Compile Update="Templates\Default\NugetPublishShell.cs">
+	    <DesignTime>True</DesignTime>
+	  </Compile>
+	  <Compile Update="Templates\Default\src\Core\Csproj.cs">
+	    <DesignTime>True</DesignTime>
+	  </Compile>
+	  <Compile Update="Templates\Default\src\Core\Infrastructure\Config.cs">
+	    <DesignTime>True</DesignTime>
+	  </Compile>
+	  <Compile Update="Templates\Default\src\WebHost\Program.cs">
 	    <DesignTime>True</DesignTime>
 	  </Compile>
 	</ItemGroup>

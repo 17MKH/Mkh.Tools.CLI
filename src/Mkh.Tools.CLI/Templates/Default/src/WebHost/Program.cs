@@ -33,7 +33,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.WebHost
             #line default
             #line hidden
             this.Write(".WebHost;\r\n\r\npublic class Program\r\n{\r\n    public static void Main(string[] args)\r" +
-                    "\n    {\r\n        new HostBootstrap(args).Run();\r\n    }\r\n}");
+                    "\n    {\r\n        new HostBootstrap().Run(args);\r\n    }\r\n}");
             return this.GenerationEnvironment.ToString();
         }
     }

@@ -23,4 +23,6 @@ public class NuGetPackageVersions
 
     public string Mod_Admin_Web { get; set; }
 
+    public string Mod_Config_Abstractions { get; set; }
+
 }

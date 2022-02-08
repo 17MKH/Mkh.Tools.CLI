@@ -25,7 +25,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.Core.Infrastructure
         /// </summary>
         public virtual string TransformText()
         {
-            this.Write("using Mkh.Utils.Config;\r\n\r\nnamespace Mkh.Mod.");
+            this.Write("using Mkh.Config.Abstractions;\r\n\r\nnamespace Mkh.Mod.");
             
             #line 4 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\Config.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code));
