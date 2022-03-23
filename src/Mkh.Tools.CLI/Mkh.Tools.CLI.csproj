@@ -8,7 +8,7 @@
 		<ToolCommandName>mkh</ToolCommandName>
 		<AssemblyName>Mkh.Tools.CLI</AssemblyName>
 		<RootNamespace>Mkh.Tools.CLI</RootNamespace>
-		<Version>1.1.1</Version>
+		<Version>1.1.2</Version>
 		<PackageOutputPath>../../_packages</PackageOutputPath>
 	</PropertyGroup>
 
@@ -67,11 +67,11 @@
 			<Generator>TextTemplatingFilePreprocessor</Generator>
 			<LastGenOutput>IndexHtml.cs</LastGenOutput>
 		</None>
-		<None Update="Templates\Default\src\UI\Web\locales\en\Index.tt">
+		<None Update="Templates\Default\src\UI\Web\src\locales\en\Index.tt">
 		  <Generator>TextTemplatingFilePreprocessor</Generator>
 		  <LastGenOutput>Index.cs</LastGenOutput>
 		</None>
-		<None Update="Templates\Default\src\UI\Web\locales\zh_cn\Index.tt">
+		<None Update="Templates\Default\src\UI\Web\src\locales\zh_cn\Index.tt">
 		  <Generator>TextTemplatingFilePreprocessor</Generator>
 		  <LastGenOutput>Index.cs</LastGenOutput>
 		</None>
@@ -323,24 +323,16 @@
 			<AutoGen>True</AutoGen>
 			<DependentUpon>Npmrc.tt</DependentUpon>
 		</Compile>
-		<Compile Update="Templates\Default\src\UI\Web\locales\en\Index.*">
+		<Compile Update="Templates\Default\src\UI\Web\src\locales\en\Index.*">
 			<DesignTime>True</DesignTime>
 			<AutoGen>True</AutoGen>
 			<DependentUpon>Index.tt</DependentUpon>
 		</Compile>
-		<Compile Update="Templates\Default\src\UI\Web\locales\zh_cn\Index.*">
+		<Compile Update="Templates\Default\src\UI\Web\src\locales\zh_cn\Index.*">
 			<DesignTime>True</DesignTime>
 			<AutoGen>True</AutoGen>
 			<DependentUpon>Index.tt</DependentUpon>
 		</Compile>
 	</ItemGroup>
 
-	<ItemGroup>
-	  <Compile Update="Templates\Default\src\UI\Web\PackageJson.cs">
-	    <DesignTime>True</DesignTime>
-	  </Compile>
-	  <Compile Update="Templates\Default\src\WebHost\Appsettings.cs">
-	    <DesignTime>True</DesignTime>
-	  </Compile>
-	</ItemGroup>
 </Project>
