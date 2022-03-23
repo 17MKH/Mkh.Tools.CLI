@@ -52,6 +52,8 @@ export default defineConfig(({ mode, command }) => {
         dependencyModules: ['admin'],
         /** 语言包 */
         locales: ['zh-cn', 'en'],
+        /** 皮肤 */
+        skins: [],
         /** index.html文件转换 */
         htmlTransform: {
           /** 模板渲染数据，如果使用自己的模板，则自己定义渲染数据 */
@@ -61,7 +63,7 @@ export default defineConfig(({ mode, command }) => {
             /** 版权信息 */
             copyright: '");
             
-            #line 29 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\ViteConfig.tt"
+            #line 31 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\ViteConfig.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Copyright));
             
             #line default
