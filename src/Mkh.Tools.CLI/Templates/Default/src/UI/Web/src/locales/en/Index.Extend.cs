@@ -6,7 +6,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web.src.locales.en
     {
         public void Save(GenerateModel model)
         {
-            var dir = Path.Combine(model.CodeDir, $"src/UI/{model.Module.Code.ToLower()}-web/locales/en");
+            var dir = Path.Combine(model.CodeDir, $"src/UI/{model.Module.Code.ToLower()}-web/src/locales/en");
             if (!Directory.Exists(dir))
                 Directory.CreateDirectory(dir);
 

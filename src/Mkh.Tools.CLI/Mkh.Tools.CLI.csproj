@@ -8,7 +8,7 @@
 		<ToolCommandName>mkh</ToolCommandName>
 		<AssemblyName>Mkh.Tools.CLI</AssemblyName>
 		<RootNamespace>Mkh.Tools.CLI</RootNamespace>
-		<Version>1.1.2</Version>
+		<Version>1.1.3</Version>
 		<PackageOutputPath>../../_packages</PackageOutputPath>
 	</PropertyGroup>
 
