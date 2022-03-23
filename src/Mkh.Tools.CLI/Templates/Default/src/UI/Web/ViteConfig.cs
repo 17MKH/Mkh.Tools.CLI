@@ -26,35 +26,32 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
         public virtual string TransformText()
         {
             this.Write(@"const { resolve } = require('path')
-const fs = require('fs')
-const fse = require('fs-extra')
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import mkh from 'mkh-ui/lib/plugins'
 
-//自定义预加载页
-if (!fs.existsSync('./index.html')) {
-  fse.copySync('node_modules/mkh-ui/entries/index.html', './index.html')
-}
-
 export default defineConfig(({ mode, command }) => {
   let config = {
+    base: './',
     server: {
       port: ");
             
-            #line 17 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\ViteConfig.tt"
+            #line 11 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\ViteConfig.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.No + 5220));
             
             #line default
             #line hidden
             this.Write(@",
     },
-    base: './',
     envPrefix: 'MKH',
     plugins: [
       mkh({
         mode,
         command,
+        /** 依赖模块 */
+        dependencyModules: ['admin'],
+        /** 语言包 */
+        locales: ['zh-cn', 'en'],
         /** index.html文件转换 */
         htmlTransform: {
           /** 模板渲染数据，如果使用自己的模板，则自己定义渲染数据 */
@@ -64,7 +61,7 @@ export default defineConfig(({ mode, command }) => {
             /** 版权信息 */
             copyright: '");
             
-            #line 32 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\ViteConfig.tt"
+            #line 29 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\ViteConfig.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Copyright));
             
             #line default

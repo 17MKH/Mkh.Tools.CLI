@@ -7,7 +7,7 @@
 //     重新生成代码，这些更改将会丢失。
 // </auto-generated>
 // ------------------------------------------------------------------------------
-namespace Mkh.Tools.CLI.Templates.Default
+namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web.locales.zh_cn
 {
     using System;
     
@@ -15,9 +15,9 @@ namespace Mkh.Tools.CLI.Templates.Default
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\NugetPublishShell.tt"
+    #line 1 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\locales\zh_cn\Index.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
-    public partial class NugetPublishShell : NugetPublishShellBase
+    public partial class Index : IndexBase
     {
 #line hidden
         /// <summary>
@@ -25,17 +25,7 @@ namespace Mkh.Tools.CLI.Templates.Default
         /// </summary>
         public virtual string TransformText()
         {
-            this.Write("Write-Host \'请输入Key：\'\r\n\r\n$key = Read-Host\r\n$dir = \'./_packages\'\r\n\r\nif(Test-Path -P" +
-                    "ath $dir){\r\n    Remove-Item $dir -Recurse\r\n}\r\n\r\ndotnet build -c Release\r\n\r\nGet-C" +
-                    "hildItem -Path $dir | ForEach-Object -Process{\r\n    dotnet nuget push $_.fullnam" +
-                    "e -s ");
-            
-            #line 14 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\NugetPublishShell.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(_model.NexusRepositoryUrl));
-            
-            #line default
-            #line hidden
-            this.Write("/repository/nuget-hosted/ -k $key\r\n}\r\n\r\npause");
+            this.Write("export default {\r\n  routes: {\r\n  },\r\n}\r\n");
             return this.GenerationEnvironment.ToString();
         }
     }
@@ -47,7 +37,7 @@ namespace Mkh.Tools.CLI.Templates.Default
     /// Base class for this transformation
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
-    public class NugetPublishShellBase
+    public class IndexBase
     {
         #region Fields
         private global::System.Text.StringBuilder generationEnvironmentField;

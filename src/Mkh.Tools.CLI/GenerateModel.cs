@@ -29,11 +29,6 @@ public class GenerateModel
     public string Copyright { get; set; }
 
     /// <summary>
-    /// 私服地址
-    /// </summary>
-    public string NexusRepositoryUrl { get; set; }
-
-    /// <summary>
     /// 模板类型
     /// </summary>
     public TemplateType TemplateType { get; set; }

@@ -8,7 +8,7 @@
 		<ToolCommandName>mkh</ToolCommandName>
 		<AssemblyName>Mkh.Tools.CLI</AssemblyName>
 		<RootNamespace>Mkh.Tools.CLI</RootNamespace>
-		<Version>1.1.1</Version>
+		<Version>1.0.4</Version>
 		<PackageOutputPath>../../_packages</PackageOutputPath>
 	</PropertyGroup>
 
@@ -30,6 +30,10 @@
 		<None Update="Templates\Default\Gitignore.tt">
 			<Generator>TextTemplatingFilePreprocessor</Generator>
 			<LastGenOutput>Gitignore.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\NugetPublishShell.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>NugetPublishShell.cs</LastGenOutput>
 		</None>
 		<None Update="Templates\Default\Solution.tt">
 			<Generator>TextTemplatingFilePreprocessor</Generator>
@@ -71,9 +75,12 @@
 		  <Generator>TextTemplatingFilePreprocessor</Generator>
 		  <LastGenOutput>Index.cs</LastGenOutput>
 		</None>
-		<None Update="Templates\Default\src\UI\Web\locales\zh_cn\Index.tt">
+		<None Update="Templates\Default\src\UI\Web\locales\zh-cn\Index.tt">
 		  <Generator>TextTemplatingFilePreprocessor</Generator>
-		  <LastGenOutput>Index.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\UI\Web\Npmrc.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>Npmrc.cs</LastGenOutput>
 		</None>
 		<None Update="Templates\Default\src\UI\Web\PackageJson.tt">
 			<Generator>TextTemplatingFilePreprocessor</Generator>
@@ -328,19 +335,12 @@
 			<AutoGen>True</AutoGen>
 			<DependentUpon>Index.tt</DependentUpon>
 		</Compile>
-		<Compile Update="Templates\Default\src\UI\Web\locales\zh_cn\Index.*">
-			<DesignTime>True</DesignTime>
-			<AutoGen>True</AutoGen>
-			<DependentUpon>Index.tt</DependentUpon>
-		</Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="Templates\Default\src\UI\Web\PackageJson.cs">
-	    <DesignTime>True</DesignTime>
-	  </Compile>
-	  <Compile Update="Templates\Default\src\WebHost\Appsettings.cs">
+	  <Compile Update="Templates\Default\src\UI\Web\locales\en\Index.cs">
 	    <DesignTime>True</DesignTime>
 	  </Compile>
 	</ItemGroup>
+
 </Project>

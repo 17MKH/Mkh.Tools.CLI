@@ -26,7 +26,6 @@ namespace Mkh.Tools.CLI.Commands
                 },
                 Company = Prompt.GetString("请输入公司单位：") ?? "",
                 Copyright = Prompt.GetString("请输入版权声明：") ?? "",
-                NexusRepositoryUrl = Prompt.GetString("请输入Nexus私服地址：") ?? "",
                 TemplateType = TemplateType.Default,
                 NuGetPackageVersions = new NuGetHelper().GetVersions(),
                 NPMPackageVersions = new NPMHelper().GetVersions()

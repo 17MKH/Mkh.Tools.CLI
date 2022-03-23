@@ -7,7 +7,7 @@
 //     重新生成代码，这些更改将会丢失。
 // </auto-generated>
 // ------------------------------------------------------------------------------
-namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
+namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web.locales.en
 {
     using System;
     
@@ -15,9 +15,9 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\Npmrc.tt"
+    #line 1 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\locales\en\Index.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
-    public partial class Npmrc : NpmrcBase
+    public partial class Index : IndexBase
     {
 #line hidden
         /// <summary>
@@ -25,14 +25,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
         /// </summary>
         public virtual string TransformText()
         {
-            this.Write("registry = ");
-            
-            #line 2 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\Npmrc.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(_model.NexusRepositoryUrl));
-            
-            #line default
-            #line hidden
-            this.Write("/repository/npm-group/");
+            this.Write("export default {\r\n  routes: {\r\n  },\r\n}\r\n");
             return this.GenerationEnvironment.ToString();
         }
     }
@@ -44,7 +37,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
     /// Base class for this transformation
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
-    public class NpmrcBase
+    public class IndexBase
     {
         #region Fields
         private global::System.Text.StringBuilder generationEnvironmentField;

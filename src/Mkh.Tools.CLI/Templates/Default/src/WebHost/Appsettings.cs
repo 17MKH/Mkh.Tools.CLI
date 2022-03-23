@@ -62,24 +62,30 @@ namespace Mkh.Tools.CLI.Templates.Default.src.WebHost
       }
     ]
   },
-  //MKH框架本身的配置
+  //MKH框架本身的配置，完整配置可参考https://github.com/17MKH/Mkh/blob/main/modules/WebHost/appsettings.json
   ""Mkh"": {
+    //通用配置
+    ""Common"": {
+      //临时文件目录，默认应用程序根目录中的Temp目录
+      ""TempDir"": """",
+      //数据库配置
+      ""Db"": {
+        //数据库类型，0：SqlServer 1：MySql 2：Sqlite  3：PostgreSQL  4：Oracle
+        ""Provider"": 2
+      }
+    },
     //模块列表
     ""Modules"": {
       ""Admin"": {
-        ""Db"": {
-          ""Provider"": 2
-        }
       },
       """);
             
-            #line 45 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\WebHost\Appsettings.tt"
+            #line 52 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\WebHost\Appsettings.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code));
             
             #line default
             #line hidden
-            this.Write("\": {\r\n        //模块数据库配置\r\n        \"Db\": {\r\n          \"Provider\": 2\r\n        },\r\n  " +
-                    "      //模块配置信息\r\n        \"Config\": {\r\n        }\r\n      }\r\n    }\r\n  }\r\n}\r\n\r\n");
+            this.Write("\": {\r\n      }\r\n    }\r\n  }\r\n}\r\n\r\n");
             return this.GenerationEnvironment.ToString();
         }
     }

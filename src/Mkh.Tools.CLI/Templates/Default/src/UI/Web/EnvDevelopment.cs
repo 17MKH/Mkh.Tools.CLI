@@ -28,7 +28,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
             this.Write("MKH_API_URL=http://localhost:");
             
             #line 2 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\EnvDevelopment.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.No + 5220));
+            this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.No + 6220));
             
             #line default
             #line hidden

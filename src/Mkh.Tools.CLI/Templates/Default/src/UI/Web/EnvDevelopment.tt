@@ -1,2 +1,2 @@
 ﻿<#@ template language="C#" #>
-MKH_API_URL=http://localhost:<#= _model.Module.No + 5220 #>/api/
+MKH_API_URL=http://localhost:<#= _model.Module.No + 6220 #>/api/

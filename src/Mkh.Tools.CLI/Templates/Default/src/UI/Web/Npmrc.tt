@@ -1,2 +1,0 @@
-﻿<#@ template language="C#" #>
-registry = <#= _model.NexusRepositoryUrl #>/repository/npm-group/

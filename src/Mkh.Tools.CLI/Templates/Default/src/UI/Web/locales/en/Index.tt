@@ -1,0 +1,5 @@
+﻿<#@ template language="C#" #>
+export default {
+  routes: {
+  },
+}

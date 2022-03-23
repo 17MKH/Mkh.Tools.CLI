@@ -25,18 +25,12 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web.src
         /// </summary>
         public virtual string TransformText()
         {
-            this.Write("import { configure } from \'mkh-ui\'\r\nimport \'mkh-mod-admin\'\r\nimport \'./index\'\r\n\r\nc" +
-                    "onfigure({\r\n  http: {\r\n    global: {\r\n      baseURL: \'http://localhost:");
+            this.Write("import { configure } from \'mkh-ui\'\r\nimport \'./index\'\r\n\r\nconfigure({\r\n  http: {\r\n " +
+                    "   global: {\r\n      baseURL: import.meta.env.MKH_API_URL,\r\n    },\r\n  },\r\n  befor" +
+                    "eMount({ config }) {\r\n    config.component.login = \'k\'\r\n    config.site.title = " +
+                    "\'");
             
-            #line 9 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\MainJs.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.No + 6220));
-            
-            #line default
-            #line hidden
-            this.Write("/api/\',\r\n    },\r\n  },\r\n  beforeMount({ config }) {\r\n    config.component.login = " +
-                    "\'k\'\r\n    config.site.title = \'");
-            
-            #line 14 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\MainJs.tt"
+            #line 13 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\MainJs.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Remarks));
             
             #line default

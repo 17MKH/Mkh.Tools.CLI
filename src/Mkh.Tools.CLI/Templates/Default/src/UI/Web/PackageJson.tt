@@ -37,6 +37,6 @@
     "lib"
   ],
   "publishConfig": {
-    "registry": "<#= _model.NexusRepositoryUrl #>/repository/npm-hosted/"
+    "registry": ""
   }
 }

@@ -105,14 +105,10 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
     ""lib""
   ],
   ""publishConfig"": {
-    ""registry"": """);
-            
-            #line 40 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\PackageJson.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(_model.NexusRepositoryUrl));
-            
-            #line default
-            #line hidden
-            this.Write("/repository/npm-hosted/\"\r\n  }\r\n}\r\n");
+    ""registry"": """"
+  }
+}
+");
             return this.GenerationEnvironment.ToString();
         }
     }

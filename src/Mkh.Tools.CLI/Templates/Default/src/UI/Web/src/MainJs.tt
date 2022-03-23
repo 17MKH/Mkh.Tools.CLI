@@ -1,12 +1,11 @@
 ﻿<#@ template language="C#" #>
 import { configure } from 'mkh-ui'
-import 'mkh-mod-admin'
 import './index'
 
 configure({
   http: {
     global: {
-      baseURL: 'http://localhost:<#= _model.Module.No + 6220 #>/api/',
+      baseURL: import.meta.env.MKH_API_URL,
     },
   },
   beforeMount({ config }) {
