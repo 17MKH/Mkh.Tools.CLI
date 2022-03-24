@@ -72,6 +72,8 @@ public class NuGetHelper
             var version = reg.Match(jsonStr).Groups[1].Value;
 
             Console.WriteLine($"获取到NuGet包{packageId}版本号为：{version}");
+
+            return version;
         }
 
         return "";

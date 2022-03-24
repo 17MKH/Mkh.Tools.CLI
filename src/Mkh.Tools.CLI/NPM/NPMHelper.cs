@@ -73,6 +73,8 @@ public class NPMHelper
             var version = reg.Match(jsonStr).Groups[1].Value;
 
             Console.WriteLine($"获取到NPM包{packageId}版本号为：{version}");
+
+            return version;
         }
 
         return "";
