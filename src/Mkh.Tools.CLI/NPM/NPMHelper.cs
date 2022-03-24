@@ -9,7 +9,7 @@ namespace Mkh.Tools.CLI.NPM;
 /// </summary>
 public class NPMHelper
 {
-    private const string QueryUrl = "https://api.npms.io/v2/package/{0}";
+    private const string QueryUrl = "https://www.npmjs.com/package/{0}";
     private readonly Dictionary<string, PropertyInfo> _infos = new();
     private readonly HttpClient _client;
     private NPMPackageVersions _versions;
@@ -68,8 +68,11 @@ public class NPMHelper
         var jsonStr = await _client.GetStringAsync(url);
         if (!string.IsNullOrWhiteSpace(jsonStr))
         {
-            var reg = new Regex(",\"version\":\"([^\"]+)\"");
-            return reg.Match(jsonStr).Groups[1].Value;
+            var reg = new Regex("Latest version: ([^,]+),");
+
+            var version = reg.Match(jsonStr).Groups[1].Value;
+
+            Console.WriteLine($"获取到NPM包{packageId}版本号为：{version}");
         }
 
         return "";

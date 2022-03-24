@@ -69,7 +69,9 @@ public class NuGetHelper
         if (!string.IsNullOrWhiteSpace(jsonStr))
         {
             var reg = new Regex(",\"version\":\"([^\"]+)\"");
-            return reg.Match(jsonStr).Groups[1].Value;
+            var version = reg.Match(jsonStr).Groups[1].Value;
+
+            Console.WriteLine($"获取到NuGet包{packageId}版本号为：{version}");
         }
 
         return "";
