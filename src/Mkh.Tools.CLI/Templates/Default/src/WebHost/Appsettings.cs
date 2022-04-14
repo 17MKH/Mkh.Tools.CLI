@@ -32,7 +32,11 @@ namespace Mkh.Tools.CLI.Templates.Default.src.WebHost
             
             #line default
             #line hidden
-            this.Write(@"""
+            this.Write(@""",
+    //wwwroot目录下开放的目录列表
+    ""OpenDirs"": [""web""],
+    //目录目录
+    ""DefaultDir"": ""web""
   },
   //Serilog日志配置
   ""Serilog"": {
@@ -80,7 +84,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.WebHost
       },
       """);
             
-            #line 52 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\WebHost\Appsettings.tt"
+            #line 56 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\WebHost\Appsettings.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code));
             
             #line default

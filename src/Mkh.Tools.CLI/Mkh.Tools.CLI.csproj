@@ -8,14 +8,16 @@
 		<ToolCommandName>mkh</ToolCommandName>
 		<AssemblyName>Mkh.Tools.CLI</AssemblyName>
 		<RootNamespace>Mkh.Tools.CLI</RootNamespace>
-		<Version>1.2.0</Version>
+		<Version>1.2.2</Version>
 		<PackageOutputPath>../../_packages</PackageOutputPath>
 	</PropertyGroup>
 
 	<ItemGroup>
 		<PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="4.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Http" Version="6.0.0" />
+		<PackageReference Include="Spectre.Console" Version="0.44.0" />
 		<PackageReference Include="System.CodeDom" Version="6.0.0" />
+		<PackageReference Include="System.CommandLine" Version="2.0.0-beta3.22114.1" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -337,6 +339,9 @@
 
 	<ItemGroup>
 	  <Compile Update="Templates\Default\src\UI\Web\ViteConfig.cs">
+	    <DesignTime>True</DesignTime>
+	  </Compile>
+	  <Compile Update="Templates\Default\src\WebHost\Appsettings.cs">
 	    <DesignTime>True</DesignTime>
 	  </Compile>
 	</ItemGroup>

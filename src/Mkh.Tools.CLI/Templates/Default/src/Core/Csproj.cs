@@ -30,7 +30,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.Core
                     "e=\"Mkh.Config.Abstractions\" Version=\"");
             
             #line 9 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Csproj.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(_model.NuGetPackageVersions.Mod_Config_Abstractions));
+            this.Write(this.ToStringHelper.ToStringWithCulture(_model.NuGetPackageVersions.Config_Abstractions));
             
             #line default
             #line hidden

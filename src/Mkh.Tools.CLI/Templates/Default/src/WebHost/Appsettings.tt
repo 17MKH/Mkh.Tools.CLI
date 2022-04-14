@@ -3,7 +3,11 @@
   //主机配置
   "Host": {
     //绑定URL
-    "Urls": "http://*:<#= _model.Module.No + 6220 #>"
+    "Urls": "http://*:<#= _model.Module.No + 6220 #>",
+    //wwwroot目录下开放的目录列表
+    "OpenDirs": ["web"],
+    //目录目录
+    "DefaultDir": "web"
   },
   //Serilog日志配置
   "Serilog": {
