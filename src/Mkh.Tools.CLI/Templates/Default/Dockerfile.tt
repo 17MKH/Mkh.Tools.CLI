@@ -1,7 +1,7 @@
 ﻿<#@ template language="C#" #>
 FROM mcr.microsoft.com/dotnet/aspnet:6.0-focal AS base
 WORKDIR /app
-EXPOSE <#= _model.Module.No + 6220 #>
+EXPOSE 80
 
 # 打包前端
 FROM node:16 AS ui

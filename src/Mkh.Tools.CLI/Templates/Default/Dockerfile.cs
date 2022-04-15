@@ -25,14 +25,8 @@ namespace Mkh.Tools.CLI.Templates.Default
         /// </summary>
         public virtual string TransformText()
         {
-            this.Write("FROM mcr.microsoft.com/dotnet/aspnet:6.0-focal AS base\r\nWORKDIR /app\r\nEXPOSE ");
-            
-            #line 4 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\Dockerfile.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.No + 6220));
-            
-            #line default
-            #line hidden
-            this.Write("\r\n\r\n# 打包前端\r\nFROM node:16 AS ui\r\nWORKDIR /src\r\nCOPY . .\r\nWORKDIR /src/src/UI/");
+            this.Write("FROM mcr.microsoft.com/dotnet/aspnet:6.0-focal AS base\r\nWORKDIR /app\r\nEXPOSE 80\r\n" +
+                    "\r\n# 打包前端\r\nFROM node:16 AS ui\r\nWORKDIR /src\r\nCOPY . .\r\nWORKDIR /src/src/UI/");
             
             #line 10 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\Dockerfile.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code.ToLower()));
