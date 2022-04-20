@@ -8,14 +8,22 @@
 		<ToolCommandName>mkh</ToolCommandName>
 		<AssemblyName>Mkh.Tools.CLI</AssemblyName>
 		<RootNamespace>Mkh.Tools.CLI</RootNamespace>
-		<Version>1.2.4</Version>
+		<Version>1.2.5</Version>
 		<PackageOutputPath>../../_packages</PackageOutputPath>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="4.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Http" Version="6.0.0" />
+		<PackageReference Include="Spectre.Console" Version="0.44.0" />
 		<PackageReference Include="System.CodeDom" Version="6.0.0" />
+		<PackageReference Include="System.CommandLine" Version="2.0.0-beta3.22114.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Resource Include="Resources\AppResource.resx">
+	    <Generator>ResXFileCodeGenerator</Generator>
+	    <LastGenOutput>AppResource.Designer.cs</LastGenOutput>
+	  </Resource>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -336,6 +344,21 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Resources\AppResource.zhCN.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>AppResource.zhCN.resx</DependentUpon>
+	  </Compile>
+	  <Compile Update="Resources\Language.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Language.resx</DependentUpon>
+	  </Compile>
+	  <Compile Update="Resources\Language.enUS.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Language.enUS.resx</DependentUpon>
+	  </Compile>
 	  <Compile Update="Templates\Default\Dockerfile.cs">
 	    <DesignTime>True</DesignTime>
 	  </Compile>
@@ -345,6 +368,21 @@
 	  <Compile Update="Templates\Default\src\WebHost\Appsettings.cs">
 	    <DesignTime>True</DesignTime>
 	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Update="Resources\AppResource.zhCN.resx">
+	    <Generator>ResXFileCodeGenerator</Generator>
+	    <LastGenOutput>AppResource.zhCN.Designer.cs</LastGenOutput>
+	  </EmbeddedResource>
+	  <EmbeddedResource Update="Resources\Language.enUS.resx">
+	    <Generator>ResXFileCodeGenerator</Generator>
+	    <LastGenOutput>Language.enUS.Designer.cs</LastGenOutput>
+	  </EmbeddedResource>
+	  <EmbeddedResource Update="Resources\Language.resx">
+	    <Generator>ResXFileCodeGenerator</Generator>
+	    <LastGenOutput>Language.Designer.cs</LastGenOutput>
+	  </EmbeddedResource>
 	</ItemGroup>
 
 </Project>
