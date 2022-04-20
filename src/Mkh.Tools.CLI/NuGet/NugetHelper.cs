@@ -1,6 +1,9 @@
 ﻿using System.Net;
 using System.Reflection;
 using System.Text.RegularExpressions;
+using Mkh.Tools.CLI.Resources;
+using Mkh.Tools.CLI.Spectre;
+using Spectre.Console;
 
 namespace Mkh.Tools.CLI.NuGet;
 
@@ -38,7 +41,7 @@ public class NuGetHelper
         if (_lastSearchTime.AddHours(2) > DateTime.Now && _versions != null)
             return _versions;
 
-        Console.WriteLine("正在获取最新的NuGet依赖包版本号，请稍后...");
+        AnsiConsoleHelper.WriteLine($"[yellow]{ResourceManagerHelper.ResourceManager.GetString("GetLatestNuGetVersion")}...[/]");
 
         _versions = new NuGetPackageVersions();
         var tasks = new Dictionary<PropertyInfo, Task<string>>();
@@ -71,7 +74,7 @@ public class NuGetHelper
             var reg = new Regex(",\"version\":\"([^\"]+)\"");
             var version = reg.Match(jsonStr).Groups[1].Value;
 
-            Console.WriteLine($"获取到NuGet包{packageId}版本号为：{version}");
+            AnsiConsole.MarkupLine($"{packageId}：[yellow]{version}[/]");
 
             return version;
         }

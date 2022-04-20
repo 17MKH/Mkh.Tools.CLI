@@ -9,5 +9,5 @@ public interface IGenerateEngine
     /// 生成
     /// </summary>
     /// <param name="model">生成信息</param>
-    void Build(GenerateModel model);
+    bool Build(GenerateModel model);
 }
