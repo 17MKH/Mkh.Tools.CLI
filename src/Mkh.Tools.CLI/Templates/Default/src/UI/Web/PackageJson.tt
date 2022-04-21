@@ -10,7 +10,8 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
-    "lib": "vite build --mode=lib",
+    "lib": "vite build --mode=lib && npm run locale",
+    "locale": "rollup -c node_modules/mkh-ui/build/locales.config.js",
     "serve": "vite preview",
     "cm": "rimraf node_modules && rimraf package-lock.json",
     "cv": "rimraf node_modules/.vite"

@@ -15,7 +15,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\PackageJson.tt"
+    #line 1 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\PackageJson.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
     public partial class PackageJson : PackageJsonBase
     {
@@ -27,35 +27,35 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
         {
             this.Write("{\r\n  \"id\": ");
             
-            #line 3 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\PackageJson.tt"
+            #line 3 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\PackageJson.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.No));
             
             #line default
             #line hidden
             this.Write(",\r\n  \"name\": \"mkh-mod-");
             
-            #line 4 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\PackageJson.tt"
+            #line 4 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\PackageJson.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code.ToLower()));
             
             #line default
             #line hidden
             this.Write("\",\r\n  \"label\": \"");
             
-            #line 5 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\PackageJson.tt"
+            #line 5 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\PackageJson.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Name));
             
             #line default
             #line hidden
             this.Write("\",\r\n  \"version\": \"1.0.0\",\r\n  \"icon\": \"");
             
-            #line 7 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\PackageJson.tt"
+            #line 7 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\PackageJson.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Icon));
             
             #line default
             #line hidden
             this.Write("\",\r\n  \"description\": \"");
             
-            #line 8 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\PackageJson.tt"
+            #line 8 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\PackageJson.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Remarks));
             
             #line default
@@ -65,7 +65,8 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
   ""scripts"": {
     ""dev"": ""vite --host"",
     ""build"": ""vite build"",
-    ""lib"": ""vite build --mode=lib"",
+    ""lib"": ""vite build --mode=lib && npm run locale"",
+    ""locale"": ""rollup -c node_modules/mkh-ui/build/locales.config.js"",
     ""serve"": ""vite preview"",
     ""cm"": ""rimraf node_modules && rimraf package-lock.json"",
     ""cv"": ""rimraf node_modules/.vite""
@@ -73,14 +74,14 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
   ""dependencies"": {
     ""mkh-mod-admin"": ""^");
             
-            #line 19 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\PackageJson.tt"
+            #line 20 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\PackageJson.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.NPMPackageVersions.Mod_Admin));
             
             #line default
             #line hidden
             this.Write("\",\r\n    \"mkh-ui\": \"^");
             
-            #line 20 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\PackageJson.tt"
+            #line 21 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\PackageJson.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.NPMPackageVersions.UI));
             
             #line default
