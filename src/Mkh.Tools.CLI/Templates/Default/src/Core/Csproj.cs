@@ -48,7 +48,8 @@ namespace Mkh.Tools.CLI.Templates.Default.src.Core
             
             #line default
             #line hidden
-            this.Write("\" />\r\n\t</ItemGroup>\r\n\r\n</Project>\r\n");
+            this.Write("\" />\r\n\t</ItemGroup>\r\n\t\r\n\t<ItemGroup>\r\n\t  <Folder Include=\"Domain\\\" />\r\n\t</ItemGro" +
+                    "up>\r\n\r\n</Project>\r\n");
             return this.GenerationEnvironment.ToString();
         }
     }

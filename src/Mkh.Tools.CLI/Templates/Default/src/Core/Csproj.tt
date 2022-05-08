@@ -6,9 +6,13 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Mkh.Config.Abstractions" Version="<#= _model.NuGetPackageVersions.Mod_Config_Abstractions #>" />
+		<PackageReference Include="Mkh.Config.Abstractions" Version="<#= _model.NuGetPackageVersions.Config_Abstractions #>" />
 		<PackageReference Include="Mkh.Data.Core" Version="<#= _model.NuGetPackageVersions.Data_Core #>" />
 		<PackageReference Include="Mkh.Module.Abstractions" Version="<#= _model.NuGetPackageVersions.Module_Abstractions #>" />
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <Folder Include="Domain\" />
 	</ItemGroup>
 
 </Project>
