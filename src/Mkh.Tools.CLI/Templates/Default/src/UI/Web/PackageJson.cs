@@ -68,7 +68,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
     ""build"": ""vite build --config=./build/app.config.js"",
     ""lib"": ""rimraf lib && vite build --config=./build/lib.config.js && npm run locale"",
     ""locale"": ""rollup -c node_modules/mkh-ui/build/locales.config.js"",
-    ""cm"": ""rimraf node_modules && rimraf package-lock.json"",
+    ""cm"": ""rimraf package-lock.json && rimraf node_modules"",
     ""cv"": ""rimraf node_modules/.vite""
   },
   ""dependencies"": {
