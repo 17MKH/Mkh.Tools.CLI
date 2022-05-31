@@ -8,7 +8,7 @@
 		<ToolCommandName>mkh</ToolCommandName>
 		<AssemblyName>Mkh.Tools.CLI</AssemblyName>
 		<RootNamespace>Mkh.Tools.CLI</RootNamespace>
-		<Version>1.2.7</Version>
+		<Version>1.3.0</Version>
 		<PackageOutputPath>../../_packages</PackageOutputPath>
 	</PropertyGroup>
 
@@ -59,6 +59,22 @@
 			<Generator>TextTemplatingFilePreprocessor</Generator>
 			<LastGenOutput>ModuleServicesConfigurator.cs</LastGenOutput>
 		</None>
+		<None Update="Templates\Default\src\UI\Web\build\AppConfigJs.tt">
+		  <Generator>TextTemplatingFilePreprocessor</Generator>
+		  <LastGenOutput>AppConfigJs.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\UI\Web\build\BaseConfigJs.tt">
+		  <Generator>TextTemplatingFilePreprocessor</Generator>
+		  <LastGenOutput>BaseConfigJs.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\UI\Web\build\LibConfigJs.tt">
+		  <Generator>TextTemplatingFilePreprocessor</Generator>
+		  <LastGenOutput>LibConfigJs.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\UI\Web\build\LocalesConfigJs.tt">
+		  <Generator>TextTemplatingFilePreprocessor</Generator>
+		  <LastGenOutput>LocalesConfigJs.cs</LastGenOutput>
+		</None>
 		<None Update="Templates\Default\src\UI\Web\Env.tt">
 			<Generator>TextTemplatingFilePreprocessor</Generator>
 			<LastGenOutput>Env.cs</LastGenOutput>
@@ -102,10 +118,6 @@
 		<None Update="Templates\Default\src\UI\Web\src\store\StoreJs.tt">
 			<Generator>TextTemplatingFilePreprocessor</Generator>
 			<LastGenOutput>StoreJs.cs</LastGenOutput>
-		</None>
-		<None Update="Templates\Default\src\UI\Web\ViteConfig.tt">
-			<Generator>TextTemplatingFilePreprocessor</Generator>
-			<LastGenOutput>ViteConfig.cs</LastGenOutput>
 		</None>
 		<None Update="Templates\Default\src\UI\Web\VsCodeConfig.tt">
 			<Generator>TextTemplatingFilePreprocessor</Generator>
@@ -158,6 +170,14 @@
 		<None Update="Templates\Default\src\DirectoryBuildProps.tt">
 			<Generator>TextTemplatingFilePreprocessor</Generator>
 			<LastGenOutput>DirectoryBuildProps.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\Core\Infrastructure\Localizer.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>Localizer.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\Core\Resources\LocalizerEn.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>LocalizerEn.cs</LastGenOutput>
 		</None>
 	</ItemGroup>
 
@@ -266,11 +286,6 @@
 			<AutoGen>True</AutoGen>
 			<DependentUpon>ModuleJson.tt</DependentUpon>
 		</Compile>
-		<Compile Update="Templates\Default\src\UI\Web\ViteConfig.*">
-			<DesignTime>True</DesignTime>
-			<AutoGen>True</AutoGen>
-			<DependentUpon>ViteConfig.tt</DependentUpon>
-		</Compile>
 		<Compile Update="Templates\Default\src\UI\Web\PackageJson.*">
 			<DesignTime>True</DesignTime>
 			<AutoGen>True</AutoGen>
@@ -341,6 +356,36 @@
 			<AutoGen>True</AutoGen>
 			<DependentUpon>Index.tt</DependentUpon>
 		</Compile>
+		<Compile Update="Templates\Default\src\Core\Infrastructure\Localizer.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Localizer.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\Core\Resources\LocalizerEn.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>LocalizerEn.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\UI\Web\build\BaseConfigJs.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>BaseConfigJs.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\UI\Web\build\AppConfigJs.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>AppConfigJs.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\UI\Web\build\LibConfigJs.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>LibConfigJs.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\UI\Web\build\LocalesConfigJs.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>LocalesConfigJs.tt</DependentUpon>
+		</Compile>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -359,19 +404,13 @@
 	    <AutoGen>True</AutoGen>
 	    <DependentUpon>Language.enUS.resx</DependentUpon>
 	  </Compile>
-	  <Compile Update="Templates\Default\Dockerfile.cs">
-	    <DesignTime>True</DesignTime>
-	  </Compile>
 	  <Compile Update="Templates\Default\src\Core\Csproj.cs">
 	    <DesignTime>True</DesignTime>
 	  </Compile>
+	  <Compile Update="Templates\Default\src\UI\Web\build\LocalesConfigJs.cs">
+	    <DesignTime>True</DesignTime>
+	  </Compile>
 	  <Compile Update="Templates\Default\src\UI\Web\PackageJson.cs">
-	    <DesignTime>True</DesignTime>
-	  </Compile>
-	  <Compile Update="Templates\Default\src\UI\Web\ViteConfig.cs">
-	    <DesignTime>True</DesignTime>
-	  </Compile>
-	  <Compile Update="Templates\Default\src\WebHost\Appsettings.cs">
 	    <DesignTime>True</DesignTime>
 	  </Compile>
 	</ItemGroup>

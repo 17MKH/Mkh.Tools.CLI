@@ -15,7 +15,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.Core
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Csproj.tt"
+    #line 1 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Csproj.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
     public partial class Csproj : CsprojBase
     {
@@ -29,22 +29,22 @@ namespace Mkh.Tools.CLI.Templates.Default.src.Core
                     "/TargetFramework>\r\n\t</PropertyGroup>\r\n\r\n\t<ItemGroup>\r\n\t\t<PackageReference Includ" +
                     "e=\"Mkh.Config.Abstractions\" Version=\"");
             
-            #line 9 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Csproj.tt"
+            #line 9 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Csproj.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.NuGetPackageVersions.Config_Abstractions));
             
             #line default
             #line hidden
             this.Write("\" />\r\n\t\t<PackageReference Include=\"Mkh.Data.Core\" Version=\"");
             
-            #line 10 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Csproj.tt"
+            #line 10 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Csproj.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.NuGetPackageVersions.Data_Core));
             
             #line default
             #line hidden
-            this.Write("\" />\r\n\t\t<PackageReference Include=\"Mkh.Module.Abstractions\" Version=\"");
+            this.Write("\" />\r\n\t\t<PackageReference Include=\"Mkh.Module.Core\" Version=\"");
             
-            #line 11 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Csproj.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(_model.NuGetPackageVersions.Module_Abstractions));
+            #line 11 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Csproj.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(_model.NuGetPackageVersions.Module_Core));
             
             #line default
             #line hidden

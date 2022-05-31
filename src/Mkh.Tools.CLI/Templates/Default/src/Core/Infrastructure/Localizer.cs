@@ -15,9 +15,9 @@ namespace Mkh.Tools.CLI.Templates.Default.src.Core.Infrastructure
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\CacheKeys.tt"
+    #line 1 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\Localizer.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
-    public partial class CacheKeys : CacheKeysBase
+    public partial class Localizer : LocalizerBase
     {
 #line hidden
         /// <summary>
@@ -25,30 +25,43 @@ namespace Mkh.Tools.CLI.Templates.Default.src.Core.Infrastructure
         /// </summary>
         public virtual string TransformText()
         {
-            this.Write("using System;\r\nusing Mkh.Utils.Annotations;\r\n\r\nnamespace Mkh.Mod.");
+            this.Write("using Microsoft.Extensions.Localization;\r\nusing Mkh.Module.Core;\r\nusing Mkh.Utils" +
+                    ".Annotations;\r\n\r\nnamespace Mkh.Mod.");
             
-            #line 5 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\CacheKeys.tt"
+            #line 6 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\Localizer.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code));
             
             #line default
             #line hidden
-            this.Write(".Core.Infrastructure;\r\n\r\n/// <summary>\r\n/// ");
+            this.Write(".Core.Infrastructure\r\n{\r\n    /// <summary>\r\n    /// ");
             
-            #line 8 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\CacheKeys.tt"
+            #line 9 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\Localizer.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Remarks));
             
             #line default
             #line hidden
-            this.Write("模块缓存键\r\n/// </summary>\r\n[SingletonInject]\r\npublic class ");
+            this.Write(" 多语言\r\n    /// </summary>\r\n    [SingletonInject(true)]\r\n    public class ");
             
-            #line 11 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\CacheKeys.tt"
+            #line 12 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\Localizer.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code));
             
             #line default
             #line hidden
-            this.Write("CacheKeys\r\n{\r\n    ///// <summary>\r\n    ///// 示例代码：验证码\r\n    ///// </summary>\r\n    " +
-                    "///// <param name=\"id\">验证码ID</param>\r\n    ///// <returns></returns>\r\n    //publi" +
-                    "c string VerifyCode(string id) => $\"ADMIN:VERIFY_CODE:{id}\";\r\n}");
+            this.Write("Localizer : ModuleLocalizerAbstract\r\n    {\r\n        public ");
+            
+            #line 14 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\Localizer.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code));
+            
+            #line default
+            #line hidden
+            this.Write("Localizer(IStringLocalizer<");
+            
+            #line 14 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\Localizer.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code));
+            
+            #line default
+            #line hidden
+            this.Write("Localizer> localizer) : base(localizer)\r\n        {\r\n        }\r\n    }\r\n}\r\n");
             return this.GenerationEnvironment.ToString();
         }
     }
@@ -60,7 +73,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.Core.Infrastructure
     /// Base class for this transformation
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
-    public class CacheKeysBase
+    public class LocalizerBase
     {
         #region Fields
         private global::System.Text.StringBuilder generationEnvironmentField;

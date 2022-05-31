@@ -1,21 +1,20 @@
 ﻿using System.Text;
 
-namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web;
+namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web.build;
 
-public partial class ViteConfig : ITemplateHandler
+public partial class BaseConfigJs : ITemplateHandler
 {
     private GenerateModel _model;
-
     public void Save(GenerateModel model)
     {
         _model = model;
-        
-        var dir = Path.Combine(model.CodeDir, $"src/UI/{_model.Module.Code.ToLower()}-web");
+
+        var dir = Path.Combine(model.CodeDir, $"src/UI/{model.Module.Code.ToLower()}-web/build");
         if (!Directory.Exists(dir))
             Directory.CreateDirectory(dir);
 
         var content = TransformText();
-        var filePath = Path.Combine(dir, "vite.config.js");
+        var filePath = Path.Combine(dir, "base.config.js");
         File.WriteAllText(filePath, content, Encoding.UTF8);
     }
 }

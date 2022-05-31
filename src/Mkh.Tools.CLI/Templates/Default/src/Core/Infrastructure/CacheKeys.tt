@@ -7,7 +7,7 @@ namespace Mkh.Mod.<#= _model.Module.Code #>.Core.Infrastructure;
 /// <summary>
 /// <#= _model.Module.Remarks #>模块缓存键
 /// </summary>
-[Singleton]
+[SingletonInject]
 public class <#= _model.Module.Code #>CacheKeys
 {
     ///// <summary>

@@ -9,7 +9,7 @@ public class NuGetPackageVersions
 
     public string Auth_Abstractions { get; set; }
 
-    public string Module_Abstractions { get; set; }
+    public string Module_Core { get; set; }
 
     public string Module_Web { get; set; }
 

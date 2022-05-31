@@ -1,0 +1,18 @@
+﻿<#@ template language="C#" #>
+using Microsoft.Extensions.Localization;
+using Mkh.Module.Core;
+using Mkh.Utils.Annotations;
+
+namespace Mkh.Mod.<#= _model.Module.Code #>.Core.Infrastructure
+{
+    /// <summary>
+    /// <#= _model.Module.Remarks #> 多语言
+    /// </summary>
+    [SingletonInject(true)]
+    public class <#= _model.Module.Code #>Localizer : ModuleLocalizerAbstract
+    {
+        public <#= _model.Module.Code #>Localizer(IStringLocalizer<<#= _model.Module.Code #>Localizer> localizer) : base(localizer)
+        {
+        }
+    }
+}

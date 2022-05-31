@@ -63,11 +63,11 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
             this.Write(@""",
   ""main"": ""lib/index.es.js"",
   ""scripts"": {
-    ""dev"": ""vite --host"",
-    ""build"": ""vite build"",
-    ""lib"": ""vite build --mode=lib && npm run locale"",
-    ""locale"": ""rollup -c node_modules/mkh-ui/build/locales.config.js"",
+    ""dev"": ""vite --host --config=./build/app.config.js"",
     ""serve"": ""vite preview"",
+    ""build"": ""vite build --config=./build/app.config.js"",
+    ""lib"": ""rimraf lib && vite build --config=./build/lib.config.js && npm run locale"",
+    ""locale"": ""rollup -c node_modules/mkh-ui/build/locales.config.js"",
     ""cm"": ""rimraf node_modules && rimraf package-lock.json"",
     ""cv"": ""rimraf node_modules/.vite""
   },
