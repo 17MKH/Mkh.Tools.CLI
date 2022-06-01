@@ -27,37 +27,23 @@ namespace Mkh.Tools.CLI.Templates.Default.src.WebHost
         {
             this.Write("<Project Sdk=\"Microsoft.NET.Sdk.Web\">\r\n\r\n\t<PropertyGroup>\r\n\t\t<TargetFramework>net" +
                     "6.0</TargetFramework>\r\n\t</PropertyGroup>\r\n\r\n\t<ItemGroup>\r\n\t\t<PackageReference In" +
-                    "clude=\"Mkh.Data.Adapter.MySql\" Version=\"");
+                    "clude=\"Mkh.Data.Adapter.Sqlite\" Version=\"");
             
             #line 9 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\WebHost\Csproj.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(_model.NuGetPackageVersions.Data_Adapter_MySql));
-            
-            #line default
-            #line hidden
-            this.Write("\" />\r\n\t\t<PackageReference Include=\"Mkh.Data.Adapter.Sqlite\" Version=\"");
-            
-            #line 10 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\WebHost\Csproj.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(_model.NuGetPackageVersions.Data_Adapter_MySql));
-            
-            #line default
-            #line hidden
-            this.Write("\" />\r\n\t\t<PackageReference Include=\"Mkh.Data.Adapter.SqlServer\" Version=\"");
-            
-            #line 11 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\WebHost\Csproj.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(_model.NuGetPackageVersions.Data_Adapter_MySql));
+            this.Write(this.ToStringHelper.ToStringWithCulture(_model.NuGetPackageVersions.Data_Adapter_Sqlite));
             
             #line default
             #line hidden
             this.Write("\" />\r\n\t\t<PackageReference Include=\"Mkh.Host.Web\" Version=\"");
             
-            #line 12 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\WebHost\Csproj.tt"
+            #line 10 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\WebHost\Csproj.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.NuGetPackageVersions.Host_Web));
             
             #line default
             #line hidden
             this.Write("\" />\r\n\t\t<PackageReference Include=\"Mkh.Mod.Admin.Web\" Version=\"");
             
-            #line 13 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\WebHost\Csproj.tt"
+            #line 11 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\WebHost\Csproj.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.NuGetPackageVersions.Mod_Admin_Web));
             
             #line default

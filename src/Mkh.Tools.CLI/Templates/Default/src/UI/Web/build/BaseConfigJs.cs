@@ -15,7 +15,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web.build
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\build\BaseConfigJs.tt"
+    #line 1 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\build\BaseConfigJs.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
     public partial class BaseConfigJs : BaseConfigJsBase
     {
@@ -29,7 +29,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web.build
                     " mui from \'mkh-ui/lib/plugins\'\r\n\r\nexport default ({ target, mode, command }) => " +
                     "{\r\n  return {\r\n    base: \'./\',\r\n    server: {\r\n      port: ");
             
-            #line 10 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\build\BaseConfigJs.tt"
+            #line 10 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\build\BaseConfigJs.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.No + 5220));
             
             #line default
@@ -57,7 +57,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web.build
             /** ∞Ê»®–≈œ¢ */
             copyright: '");
             
-            #line 31 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\build\BaseConfigJs.tt"
+            #line 31 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\build\BaseConfigJs.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Copyright));
             
             #line default

@@ -8,7 +8,7 @@
 		<ToolCommandName>mkh</ToolCommandName>
 		<AssemblyName>Mkh.Tools.CLI</AssemblyName>
 		<RootNamespace>Mkh.Tools.CLI</RootNamespace>
-		<Version>1.3.1</Version>
+		<Version>1.3.2</Version>
 		<PackageOutputPath>../../_packages</PackageOutputPath>
 	</PropertyGroup>
 
@@ -407,10 +407,28 @@
 	  <Compile Update="Templates\Default\src\Core\Csproj.cs">
 	    <DesignTime>True</DesignTime>
 	  </Compile>
+	  <Compile Update="Templates\Default\src\Core\Infrastructure\Localizer.cs">
+	    <DesignTime>True</DesignTime>
+	  </Compile>
+	  <Compile Update="Templates\Default\src\Core\Resources\LocalizerEn.cs">
+	    <DesignTime>True</DesignTime>
+	  </Compile>
+	  <Compile Update="Templates\Default\src\UI\Web\build\AppConfigJs.cs">
+	    <DesignTime>True</DesignTime>
+	  </Compile>
+	  <Compile Update="Templates\Default\src\UI\Web\build\BaseConfigJs.cs">
+	    <DesignTime>True</DesignTime>
+	  </Compile>
+	  <Compile Update="Templates\Default\src\UI\Web\build\LibConfigJs.cs">
+	    <DesignTime>True</DesignTime>
+	  </Compile>
 	  <Compile Update="Templates\Default\src\UI\Web\build\LocalesConfigJs.cs">
 	    <DesignTime>True</DesignTime>
 	  </Compile>
 	  <Compile Update="Templates\Default\src\UI\Web\PackageJson.cs">
+	    <DesignTime>True</DesignTime>
+	  </Compile>
+	  <Compile Update="Templates\Default\src\WebHost\Csproj.cs">
 	    <DesignTime>True</DesignTime>
 	  </Compile>
 	</ItemGroup>
