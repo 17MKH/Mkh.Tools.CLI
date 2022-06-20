@@ -6,8 +6,16 @@ namespace Mkh.Mod.<#= _model.Module.Code #>.Core.Infrastructure;
 
 public class ModuleServicesConfigurator : IModuleServicesConfigurator
 {
+    public void PreConfigure(ModuleConfigureContext context)
+    {
+    }
+
     public void Configure(ModuleConfigureContext context)
     {
         //注入当前模块中特有的服务
+    }
+
+    public void PostConfigure(ModuleConfigureContext context)
+    {
     }
 }

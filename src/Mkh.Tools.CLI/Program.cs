@@ -43,8 +43,11 @@ newCommand.SetHandler(() =>
         },
         Company = AnsiConsole.Prompt(AnsiConsoleHelper.CreateTextPrompt<string>("PleaseInputCompany").AllowEmpty()),
         Copyright = AnsiConsole.Prompt(AnsiConsoleHelper.CreateTextPrompt<string>("PleaseInputCopyright").AllowEmpty()),
-        TemplateType = TemplateType.Default
+        TemplateType = TemplateType.Default,
+        JwtKey = new StringHelper().GenerateRandom(16)
     };
+
+
 
     IGenerateEngine generateEngine;
     switch (model.TemplateType)

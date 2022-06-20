@@ -8,7 +8,7 @@
 		<ToolCommandName>mkh</ToolCommandName>
 		<AssemblyName>Mkh.Tools.CLI</AssemblyName>
 		<RootNamespace>Mkh.Tools.CLI</RootNamespace>
-		<Version>1.3.2</Version>
+		<Version>1.3.3</Version>
 		<PackageOutputPath>../../_packages</PackageOutputPath>
 	</PropertyGroup>
 
@@ -410,6 +410,9 @@
 	  <Compile Update="Templates\Default\src\Core\Infrastructure\Localizer.cs">
 	    <DesignTime>True</DesignTime>
 	  </Compile>
+	  <Compile Update="Templates\Default\src\Core\Infrastructure\ModuleServicesConfigurator.cs">
+	    <DesignTime>True</DesignTime>
+	  </Compile>
 	  <Compile Update="Templates\Default\src\Core\Resources\LocalizerEn.cs">
 	    <DesignTime>True</DesignTime>
 	  </Compile>
@@ -426,6 +429,12 @@
 	    <DesignTime>True</DesignTime>
 	  </Compile>
 	  <Compile Update="Templates\Default\src\UI\Web\PackageJson.cs">
+	    <DesignTime>True</DesignTime>
+	  </Compile>
+	  <Compile Update="Templates\Default\src\UI\Web\src\MainJs.cs">
+	    <DesignTime>True</DesignTime>
+	  </Compile>
+	  <Compile Update="Templates\Default\src\WebHost\Appsettings.cs">
 	    <DesignTime>True</DesignTime>
 	  </Compile>
 	  <Compile Update="Templates\Default\src\WebHost\Csproj.cs">

@@ -31,7 +31,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web.src
                     "\'");
             
             #line 13 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\MainJs.tt"
-            this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Remarks));
+            this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Name));
             
             #line default
             #line hidden

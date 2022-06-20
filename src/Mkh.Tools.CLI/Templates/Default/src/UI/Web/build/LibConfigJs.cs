@@ -27,6 +27,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web.build
         {
             this.Write(@"/** 打包库模式 */
 const { resolve } = require('path')
+import { external } from 'mkh-ui/lib/plugins'
 import { defineConfig } from 'vite'
 import useBaseConfig from './base.config'
 
@@ -44,7 +45,7 @@ export default defineConfig(({ mode, command }) => {
     },
     rollupOptions: {
       /** 排除无需打包进去的依赖库 */
-      external: ['vue', 'vue-router', 'vuex', 'mkh-ui'],
+      external,
     },
   }
 

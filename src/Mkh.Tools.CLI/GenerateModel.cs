@@ -34,6 +34,11 @@ public class GenerateModel
     public TemplateType TemplateType { get; set; }
 
     /// <summary>
+    /// Jwt认证的Key
+    /// </summary>
+    public string JwtKey { get; set; }
+
+    /// <summary>
     /// NuGet包最新版本号
     /// </summary>
     public NuGetPackageVersions NuGetPackageVersions { get; set; }

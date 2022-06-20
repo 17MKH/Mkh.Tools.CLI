@@ -10,6 +10,6 @@ configure({
   },
   beforeMount({ config }) {
     config.component.login = 'k'
-    config.site.title = '<#= _model.Module.Remarks #>'
+    config.site.title = '<#= _model.Module.Name #>'
   },
 })

@@ -32,9 +32,23 @@ namespace Mkh.Tools.CLI.Templates.Default.src.Core.Infrastructure
             
             #line default
             #line hidden
-            this.Write(".Core.Infrastructure;\r\n\r\npublic class ModuleServicesConfigurator : IModuleService" +
-                    "sConfigurator\r\n{\r\n    public void Configure(ModuleConfigureContext context)\r\n   " +
-                    " {\r\n        //注入当前模块中特有的服务\r\n    }\r\n}");
+            this.Write(@".Core.Infrastructure;
+
+public class ModuleServicesConfigurator : IModuleServicesConfigurator
+{
+    public void PreConfigure(ModuleConfigureContext context)
+    {
+    }
+
+    public void Configure(ModuleConfigureContext context)
+    {
+        //注入当前模块中特有的服务
+    }
+
+    public void PostConfigure(ModuleConfigureContext context)
+    {
+    }
+}");
             return this.GenerationEnvironment.ToString();
         }
     }

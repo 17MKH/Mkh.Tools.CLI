@@ -32,64 +32,86 @@ namespace Mkh.Tools.CLI.Templates.Default.src.WebHost
             
             #line default
             #line hidden
-            this.Write(@""",
-    //wwwroot目录下开放的目录列表
-    ""OpenDirs"": [""web""],
-    //目录目录
-    ""DefaultDir"": ""web""
-  },
-  //Serilog日志配置
-  ""Serilog"": {
-    ""MinimumLevel"": {
-      ""Default"": ""Error"",
-      ""Override"": {
-        ""Microsoft"": ""Error"",
-        ""System"": ""Error""
-      }
-    },
-    ""WriteTo"": [
-      //输出到文件
-      {
-        ""Name"": ""File"",
-        ""Args"": {
-          //文件路径
-          ""path"": ""log/log.log"",
-          //文件滚动方式
-          ""rollingInterval"": ""Day"",
-          //消息输出格式
-          ""outputTemplate"": ""{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] {Message:lj}{NewLine}{Exception}"",
-          //文件数量
-          ""retainedFileCountLimit"": 60,
-          //使用缓冲，提高写入效率
-          ""buffered"": false
-        }
-      }
-    ]
-  },
-  //MKH框架本身的配置，完整配置可参考https://github.com/17MKH/Mkh/blob/main/modules/WebHost/appsettings.json
-  ""Mkh"": {
-    //通用配置
-    ""Common"": {
-      //临时文件目录，默认应用程序根目录中的Temp目录
-      ""TempDir"": """",
-      //数据库配置
-      ""Db"": {
-        //数据库类型，0：SqlServer 1：MySql 2：Sqlite  3：PostgreSQL  4：Oracle
-        ""Provider"": 2
-      }
-    },
-    //模块列表
-    ""Modules"": {
-      ""Admin"": {
-      },
-      """);
+            this.Write("\",\r\n    //wwwroot目录下开放的目录列表\r\n    \"OpenDirs\": [\"web\"],\r\n    //目录目录\r\n    \"DefaultDi" +
+                    "r\": \"web\"\r\n  },\r\n  //Serilog日志配置\r\n  \"Serilog\": {\r\n    \"MinimumLevel\": {\r\n      \"" +
+                    "Default\": \"Error\",\r\n      \"Override\": {\r\n        \"Microsoft\": \"Error\",\r\n        " +
+                    "\"System\": \"Error\"\r\n      }\r\n    },\r\n    \"WriteTo\": [\r\n      //输出到文件\r\n      {\r\n  " +
+                    "      \"Name\": \"File\",\r\n        \"Args\": {\r\n          //文件路径\r\n          \"path\": \"l" +
+                    "og/log.log\",\r\n          //文件滚动方式\r\n          \"rollingInterval\": \"Day\",\r\n         " +
+                    " //消息输出格式\r\n          \"outputTemplate\": \"{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} " +
+                    "[{Level:u3}] {Message:lj}{NewLine}{Exception}\",\r\n          //文件数量\r\n          \"re" +
+                    "tainedFileCountLimit\": 60,\r\n          //使用缓冲，提高写入效率\r\n          \"buffered\": false" +
+                    "\r\n        }\r\n      }\r\n    ]\r\n  },\r\n  //MKH框架本身的配置，完整配置可参考https://github.com/17MK" +
+                    "H/Mkh/blob/main/modules/WebHost/appsettings.json\r\n  \"Mkh\": {\r\n    //通用配置\r\n    \"C" +
+                    "ommon\": {\r\n      //临时文件目录，默认应用程序根目录中的Temp目录\r\n      \"TempDir\": \"\",\r\n      //默认语言\r" +
+                    "\n      \"Lang\": \"zh\", \r\n      //数据库配置\r\n      \"Db\": {\r\n        //数据库类型，0：SqlServer" +
+                    " 1：MySql 2：Sqlite  3：PostgreSQL  4：Oracle\r\n        \"Provider\": 2,\r\n        //数据库" +
+                    "连接字符串\r\n        \"ConnectionString\": \"\",\r\n        //开启日志\r\n        \"Log\": true,\r\n  " +
+                    "      //启用代码优先模式\r\n        \"CodeFirst\": true,\r\n        //自动创建数据库\r\n        \"Create" +
+                    "Database\": true,\r\n        //自动更新列信息\r\n        \"UpdateColumn\": true,\r\n        //创建" +
+                    "数据库后初始化数据\r\n        \"InitData\": true\r\n      }\r\n    },\r\n    //模块列表\r\n    \"Modules\":" +
+                    " {\r\n      \"Admin\": {\r\n        \"Config\": {\r\n          //创建账户时默认密码\r\n          \"Def" +
+                    "aultPassword\": \"123456789\"\r\n        }\r\n      },\r\n      \"");
             
-            #line 56 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\WebHost\Appsettings.tt"
+            #line 74 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\WebHost\Appsettings.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code));
             
             #line default
             #line hidden
-            this.Write("\": {\r\n      }\r\n    }\r\n  }\r\n}\r\n\r\n");
+            this.Write(@""": {
+      }
+    },
+    //身份认证与授权配置项
+    ""Auth"": {
+      //启用权限验证(生产环境慎重关闭)
+      ""EnablePermissionVerify"": true,
+      //启用验证码功能
+      ""EnableVerifyCode"": false,
+      //启用审计日志
+      ""EnableAuditLog"": true,
+      //启用检测IP地址功能
+      ""EnableCheckIP"": true,
+      //对登录凭证进行加密
+      ""EncryptCert"": true,
+      //Jwt配置
+      ""Jwt"": {
+        //密钥
+        ""Key"": """);
+            
+            #line 92 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\WebHost\Appsettings.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(_model.JwtKey));
+            
+            #line default
+            #line hidden
+            this.Write(@""",
+        //发行人
+        ""Issuer"": ""http://127.0.0.1:6220"",
+        //消费者
+        ""Audience"": ""http://127.0.0.1:6220"",
+        //令牌有效期，单位分钟，(默认120)
+        ""Expires"": 120,
+        //刷新令牌有效期(单位：天，默认7)
+        ""RefreshTokenExpires"": 7
+      }
+    },
+    //缓存配置
+    ""Cache"": {
+      //缓存提供器，0、MemoryCache 1、Redis
+      ""Provider"": 0,
+      //Redis配置
+      ""Redis"": {
+        //默认数据库
+        ""DefaultDb"": 0,
+        //缓存键前缀
+        ""KeyPrefix"": """",
+        //链接字符串
+        ""ConnectionString"": """"
+      }
+    }
+  }
+}
+
+");
             return this.GenerationEnvironment.ToString();
         }
     }
