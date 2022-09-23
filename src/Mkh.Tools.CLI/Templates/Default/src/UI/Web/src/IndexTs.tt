@@ -1,0 +1,8 @@
+﻿<#@ template language="C#" #>
+import mod from 'virtual:mkh-mod-<#= _model.Module.Code.ToLower() #>'
+import useStore from './store'
+import api from './api'
+
+export default mod
+
+export { api, useStore }

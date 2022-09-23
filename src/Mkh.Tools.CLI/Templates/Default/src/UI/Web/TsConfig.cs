@@ -15,9 +15,9 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\Eslintrc.tt"
+    #line 1 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\TsConfig.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
-    public partial class Eslintrc : EslintrcBase
+    public partial class TsConfig : TsConfigBase
     {
 #line hidden
         /// <summary>
@@ -26,24 +26,39 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
         public virtual string TransformText()
         {
             this.Write(@"{
-  ""root"": true,
-  ""env"": {
-    ""browser"": true,
-    ""es2021"": true,
-    ""node"": true
-  },
-  ""extends"": [
-    ""plugin:vue/vue3-recommended"",
-    ""eslint:recommended"",
-    ""@vue/typescript/recommended"",
-    ""@vue/prettier"",
-    ""@vue/prettier/@typescript-eslint""
-  ],
-  ""parserOptions"": {
-    ""ecmaVersion"": 2021
-  },
-  ""plugins"": [],
-  ""rules"": {}
+    ""compilerOptions"": {
+        ""target"": ""esnext"",
+        ""useDefineForClassFields"": true,
+        ""module"": ""esnext"",
+        ""moduleResolution"": ""node"",
+        ""strict"": true,
+        ""jsx"": ""preserve"",
+        ""sourceMap"": true,
+        ""resolveJsonModule"": true,
+        ""isolatedModules"": true,
+        ""esModuleInterop"": true,
+        ""declaration"": true,
+        ""noImplicitAny"": false,
+        ""lib"": [
+            ""esnext"",
+            ""dom""
+        ],
+        ""skipLibCheck"": true,
+        ""baseUrl"": ""."",
+        ""paths"": {
+            ""@/*"": [
+                ""src/*""
+            ]
+        },
+        ""types"": [
+            ""vite/client""
+        ]
+    },
+    ""include"": [
+        ""src/**/*.ts"",
+        ""src/**/*.d.ts"",
+        ""src/**/*.vue""
+    ]
 }");
             return this.GenerationEnvironment.ToString();
         }
@@ -56,7 +71,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
     /// Base class for this transformation
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
-    public class EslintrcBase
+    public class TsConfigBase
     {
         #region Fields
         private global::System.Text.StringBuilder generationEnvironmentField;

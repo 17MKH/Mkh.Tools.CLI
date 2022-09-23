@@ -1,0 +1,9 @@
+﻿<#@ template language="C#" #>
+import { defineStore } from 'pinia'
+
+export default defineStore('mod.<#= _model.Module.Code.ToLower() #>', {
+  state: () => {
+    return {
+    }
+  },
+})

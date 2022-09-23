@@ -15,9 +15,9 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\Eslintrc.tt"
+    #line 1 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\ApiExtractorJson.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
-    public partial class Eslintrc : EslintrcBase
+    public partial class ApiExtractorJson : ApiExtractorJsonBase
     {
 #line hidden
         /// <summary>
@@ -26,25 +26,44 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
         public virtual string TransformText()
         {
             this.Write(@"{
-  ""root"": true,
-  ""env"": {
-    ""browser"": true,
-    ""es2021"": true,
-    ""node"": true
+  ""$schema"": ""https://developer.microsoft.com/json-schemas/api-extractor/v7/api-extractor.schema.json"",
+
+  ""mainEntryPointFilePath"": ""<projectFolder>/.temp/index.d.ts"",
+
+  ""projectFolder"": ""./"",
+
+  ""dtsRollup"": {
+    ""enabled"": true,
+    ""untrimmedFilePath"": ""<projectFolder>/lib/index.d.ts"",
+    ""publicTrimmedFilePath"": """"
   },
-  ""extends"": [
-    ""plugin:vue/vue3-recommended"",
-    ""eslint:recommended"",
-    ""@vue/typescript/recommended"",
-    ""@vue/prettier"",
-    ""@vue/prettier/@typescript-eslint""
-  ],
-  ""parserOptions"": {
-    ""ecmaVersion"": 2021
+
+  ""apiReport"": {
+    ""enabled"": false
   },
-  ""plugins"": [],
-  ""rules"": {}
-}");
+
+  ""docModel"": {
+    ""enabled"": false
+  },
+
+  ""tsdocMetadata"": {
+    ""enabled"": false
+  },
+  ""messages"": {
+    ""extractorMessageReporting"": {
+      ""ae-wrong-input-file-type"": {
+        ""logLevel"": ""none""
+      },
+      ""ae-missing-release-tag"": {
+        ""logLevel"": ""none""
+      },
+      ""ae-forgotten-export"": {
+        ""logLevel"": ""none""
+      }
+    }
+  }
+}
+");
             return this.GenerationEnvironment.ToString();
         }
     }
@@ -56,7 +75,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
     /// Base class for this transformation
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
-    public class EslintrcBase
+    public class ApiExtractorJsonBase
     {
         #region Fields
         private global::System.Text.StringBuilder generationEnvironmentField;

@@ -15,7 +15,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\IndexHtml.tt"
+    #line 1 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\IndexHtml.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
     public partial class IndexHtml : IndexHtmlBase
     {
@@ -28,97 +28,97 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
             this.Write("<!DOCTYPE html>\r\n<html lang=\"zh\">\r\n  <head>\r\n    <meta charset=\"UTF-8\" />\r\n    <l" +
                     "ink rel=\"icon\" href=\"./assets/mkh/favicon.ico\" />\r\n    <meta name=\"viewport\" con" +
                     "tent=\"width=device-width, initial-scale=1.0\" />\r\n    <title></title>\r\n    <style" +
-                    " type=\"text/css\">\r\n      html,\r\n      body {\r\n        margin: 0;\r\n        paddin" +
-                    "g: 0;\r\n        font-family: -apple-system, system-ui, Segoe UI, Roboto, Ubuntu, " +
-                    "Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, \'Helvetica Neue\', \'PingFan" +
-                    "g SC\', \'Hiragino Sans GB\', \'Microsoft YaHei\',\r\n          Arial;\r\n        font-si" +
-                    "ze: 14px;\r\n        height: 100%;\r\n      }\r\n\r\n      *,\r\n      ::after,\r\n      ::b" +
-                    "efore {\r\n        box-sizing: border-box;\r\n      }\r\n\r\n      ul {\r\n        padding" +
-                    ": 0;\r\n        margin: 0;\r\n        list-style: none;\r\n      }\r\n\r\n      a {\r\n     " +
-                    "   text-decoration: none;\r\n      }\r\n      h1,\r\n      h2,\r\n      h3,\r\n      h4,\r\n" +
-                    "      h5,\r\n      h6,\r\n      pre,\r\n      code {\r\n        margin: 0;\r\n        padd" +
-                    "ing: 0;\r\n      }\r\n\r\n      .m-loader {\r\n        position: absolute;\r\n        top:" +
-                    " 0;\r\n        left: 0;\r\n        width: 100%;\r\n        height: 100%;\r\n        back" +
-                    "ground-color: #fff;\r\n      }\r\n\r\n      .m-loader .m-loader_main {\r\n        positi" +
-                    "on: absolute;\r\n        top: 50%;\r\n        left: 50%;\r\n        width: 172px;\r\n   " +
-                    "     height: 128px;\r\n        margin: 0;\r\n        -webkit-transform: translate(-5" +
-                    "0%, -50%);\r\n        transform: translate(-50%, -50%);\r\n      }\r\n\r\n      .m-loade" +
-                    "r_square {\r\n        position: relative;\r\n      }\r\n\r\n      .m-loader_square:nth-c" +
-                    "hild(1) {\r\n        margin-left: 0px;\r\n      }\r\n\r\n      .m-loader_square:nth-chil" +
-                    "d(2) {\r\n        margin-left: 44px;\r\n      }\r\n\r\n      .m-loader_square:nth-child(" +
-                    "3) {\r\n        margin-left: 88px;\r\n      }\r\n\r\n      .m-loader_square:nth-child(4)" +
-                    " {\r\n        margin-left: 132px;\r\n      }\r\n\r\n      .m-loader_square span {\r\n     " +
-                    "   position: absolute;\r\n        top: 0px;\r\n        left: 20px;\r\n        height: " +
-                    "36px;\r\n        width: 36px;\r\n        border-radius: 2px;\r\n        background-col" +
-                    "or: #409eff;\r\n      }\r\n\r\n      .m-loader_square span:nth-child(1) {\r\n        top" +
-                    ": 0px;\r\n      }\r\n\r\n      .m-loader_square span:nth-child(2) {\r\n        top: 44px" +
-                    ";\r\n      }\r\n\r\n      .m-loader_square span:nth-child(3) {\r\n        top: 88px;\r\n  " +
-                    "    }\r\n\r\n      .m-loader_square:nth-child(1) span {\r\n        -webkit-animation: " +
-                    "animsquare1 2s infinite ease-in;\r\n        animation: animsquare1 2s infinite eas" +
-                    "e-in;\r\n      }\r\n\r\n      .m-loader_square:nth-child(2) span {\r\n        -webkit-an" +
-                    "imation: animsquare2 2s infinite ease-in;\r\n        animation: animsquare2 2s inf" +
-                    "inite ease-in;\r\n      }\r\n\r\n      .m-loader_square:nth-child(3) span {\r\n        -" +
-                    "webkit-animation: animsquare3 2s infinite ease-in;\r\n        animation: animsquar" +
-                    "e3 2s infinite ease-in;\r\n      }\r\n\r\n      .m-loader_square:nth-child(4) span {\r\n" +
-                    "        -webkit-animation: animsquare4 2s infinite ease-in;\r\n        animation: " +
-                    "animsquare4 2s infinite ease-in;\r\n      }\r\n\r\n      .m-loader_square span:nth-chi" +
-                    "ld(1) {\r\n        -webkit-animation-delay: 0s;\r\n        animation-delay: 0s;\r\n   " +
-                    "   }\r\n\r\n      .m-loader_square span:nth-child(2) {\r\n        -webkit-animation-de" +
-                    "lay: 0.15s;\r\n        animation-delay: 0.15s;\r\n      }\r\n\r\n      .m-loader_square " +
-                    "span:nth-child(3) {\r\n        -webkit-animation-delay: 0.3s;\r\n        animation-d" +
-                    "elay: 0.3s;\r\n      }\r\n\r\n      @-webkit-keyframes animsquare1 {\r\n        0%,\r\n   " +
-                    "     5%,\r\n        95%,\r\n        100% {\r\n          -webkit-transform: translate(0" +
-                    "px, 0px) rotate(0deg);\r\n          transform: translate(0px, 0px) rotate(0deg);\r\n" +
-                    "        }\r\n        30%,\r\n        70% {\r\n          -webkit-transform: translate(-" +
-                    "40px, 0px) rotate(-90deg);\r\n          transform: translate(-40px, 0px) rotate(-9" +
-                    "0deg);\r\n        }\r\n      }\r\n      @keyframes animsquare1 {\r\n        0%,\r\n       " +
-                    " 5%,\r\n        95%,\r\n        100% {\r\n          -webkit-transform: translate(0px, " +
-                    "0px) rotate(0deg);\r\n          transform: translate(0px, 0px) rotate(0deg);\r\n    " +
-                    "    }\r\n        30%,\r\n        70% {\r\n          -webkit-transform: translate(-40px" +
-                    ", 0px) rotate(-90deg);\r\n          transform: translate(-40px, 0px) rotate(-90deg" +
-                    ");\r\n        }\r\n      }\r\n      @-webkit-keyframes animsquare2 {\r\n        0%,\r\n   " +
-                    "     10%,\r\n        90%,\r\n        100% {\r\n          -webkit-transform: translate(" +
-                    "0px, 0px) rotate(0deg);\r\n          transform: translate(0px, 0px) rotate(0deg);\r" +
-                    "\n        }\r\n        35%,\r\n        65% {\r\n          -webkit-transform: translate(" +
-                    "-40px, 0px) rotate(-90deg);\r\n          transform: translate(-40px, 0px) rotate(-" +
-                    "90deg);\r\n        }\r\n      }\r\n      @keyframes animsquare2 {\r\n        0%,\r\n      " +
-                    "  10%,\r\n        90%,\r\n        100% {\r\n          -webkit-transform: translate(0px" +
-                    ", 0px) rotate(0deg);\r\n          transform: translate(0px, 0px) rotate(0deg);\r\n  " +
-                    "      }\r\n        35%,\r\n        65% {\r\n          -webkit-transform: translate(-40" +
-                    "px, 0px) rotate(-90deg);\r\n          transform: translate(-40px, 0px) rotate(-90d" +
-                    "eg);\r\n        }\r\n      }\r\n      @-webkit-keyframes animsquare3 {\r\n        0%,\r\n " +
-                    "       15%,\r\n        85%,\r\n        100% {\r\n          -webkit-transform: translat" +
-                    "e(0px, 0px) rotate(0deg);\r\n          transform: translate(0px, 0px) rotate(0deg)" +
-                    ";\r\n        }\r\n        40%,\r\n        60% {\r\n          -webkit-transform: translat" +
-                    "e(-40px, 0px) rotate(-90deg);\r\n          transform: translate(-40px, 0px) rotate" +
-                    "(-90deg);\r\n        }\r\n      }\r\n      @keyframes animsquare3 {\r\n        0%,\r\n    " +
-                    "    15%,\r\n        85%,\r\n        100% {\r\n          -webkit-transform: translate(0" +
-                    "px, 0px) rotate(0deg);\r\n          transform: translate(0px, 0px) rotate(0deg);\r\n" +
-                    "        }\r\n        40%,\r\n        60% {\r\n          -webkit-transform: translate(-" +
-                    "40px, 0px) rotate(-90deg);\r\n          transform: translate(-40px, 0px) rotate(-9" +
-                    "0deg);\r\n        }\r\n      }\r\n      @-webkit-keyframes animsquare4 {\r\n        0%,\r" +
-                    "\n        20%,\r\n        80%,\r\n        100% {\r\n          -webkit-transform: transl" +
-                    "ate(0px, 0px) rotate(0deg);\r\n          transform: translate(0px, 0px) rotate(0de" +
-                    "g);\r\n        }\r\n        45%,\r\n        55% {\r\n          -webkit-transform: transl" +
-                    "ate(-40px, 0px) rotate(-90deg);\r\n          transform: translate(-40px, 0px) rota" +
-                    "te(-90deg);\r\n        }\r\n      }\r\n      @keyframes animsquare4 {\r\n        0%,\r\n  " +
-                    "      20%,\r\n        80%,\r\n        100% {\r\n          -webkit-transform: translate" +
-                    "(0px, 0px) rotate(0deg);\r\n          transform: translate(0px, 0px) rotate(0deg);" +
-                    "\r\n        }\r\n        45%,\r\n        55% {\r\n          -webkit-transform: translate" +
-                    "(-40px, 0px) rotate(-90deg);\r\n          transform: translate(-40px, 0px) rotate(" +
-                    "-90deg);\r\n        }\r\n      }\r\n\r\n      .m-copyright {\r\n        position: absolute" +
-                    ";\r\n        left: 0;\r\n        bottom: 20px;\r\n        width: 100%;\r\n        text-a" +
-                    "lign: center;\r\n      }\r\n\r\n      .m-copyright_logo {\r\n        position: relative;" +
-                    "\r\n        top: 10px;\r\n        width: 30px;\r\n      }\r\n    </style>\r\n  </head>\r\n  " +
-                    "<body>\r\n    <div id=\"app\">\r\n      <div class=\"m-loader\">\r\n        <div class=\"m-" +
-                    "loader_main\">\r\n          <div class=\"m-loader_square\"><span></span><span></span>" +
-                    "<span></span></div>\r\n          <div class=\"m-loader_square\"><span></span><span><" +
+                    ">\r\n      html,\r\n      body {\r\n        margin: 0;\r\n        padding: 0;\r\n        f" +
+                    "ont-family: -apple-system, system-ui, Segoe UI, Roboto, Ubuntu, Cantarell, Noto " +
+                    "Sans, sans-serif, BlinkMacSystemFont, \'Helvetica Neue\', \'PingFang SC\', \'Hiragino" +
+                    " Sans GB\', \'Microsoft YaHei\',\r\n          Arial;\r\n        font-size: 14px;\r\n     " +
+                    "   height: 100%;\r\n      }\r\n\r\n      *,\r\n      ::after,\r\n      ::before {\r\n       " +
+                    " box-sizing: border-box;\r\n      }\r\n\r\n      ul {\r\n        padding: 0;\r\n        ma" +
+                    "rgin: 0;\r\n        list-style: none;\r\n      }\r\n\r\n      a {\r\n        text-decorati" +
+                    "on: none;\r\n      }\r\n      h1,\r\n      h2,\r\n      h3,\r\n      h4,\r\n      h5,\r\n     " +
+                    " h6,\r\n      pre,\r\n      code {\r\n        margin: 0;\r\n        padding: 0;\r\n      }" +
+                    "\r\n\r\n      .m-loader {\r\n        position: absolute;\r\n        top: 0;\r\n        lef" +
+                    "t: 0;\r\n        width: 100%;\r\n        height: 100%;\r\n        background-color: #f" +
+                    "ff;\r\n      }\r\n\r\n      .m-loader .m-loader_main {\r\n        position: absolute;\r\n " +
+                    "       top: 50%;\r\n        left: 50%;\r\n        width: 172px;\r\n        height: 128" +
+                    "px;\r\n        margin: 0;\r\n        -webkit-transform: translate(-50%, -50%);\r\n    " +
+                    "    transform: translate(-50%, -50%);\r\n      }\r\n\r\n      .m-loader_square {\r\n    " +
+                    "    position: relative;\r\n      }\r\n\r\n      .m-loader_square:nth-child(1) {\r\n     " +
+                    "   margin-left: 0px;\r\n      }\r\n\r\n      .m-loader_square:nth-child(2) {\r\n        " +
+                    "margin-left: 44px;\r\n      }\r\n\r\n      .m-loader_square:nth-child(3) {\r\n        ma" +
+                    "rgin-left: 88px;\r\n      }\r\n\r\n      .m-loader_square:nth-child(4) {\r\n        marg" +
+                    "in-left: 132px;\r\n      }\r\n\r\n      .m-loader_square span {\r\n        position: abs" +
+                    "olute;\r\n        top: 0px;\r\n        left: 20px;\r\n        height: 36px;\r\n        w" +
+                    "idth: 36px;\r\n        border-radius: 2px;\r\n        background-color: #409eff;\r\n  " +
+                    "    }\r\n\r\n      .m-loader_square span:nth-child(1) {\r\n        top: 0px;\r\n      }\r" +
+                    "\n\r\n      .m-loader_square span:nth-child(2) {\r\n        top: 44px;\r\n      }\r\n\r\n  " +
+                    "    .m-loader_square span:nth-child(3) {\r\n        top: 88px;\r\n      }\r\n\r\n      ." +
+                    "m-loader_square:nth-child(1) span {\r\n        -webkit-animation: animsquare1 2s i" +
+                    "nfinite ease-in;\r\n        animation: animsquare1 2s infinite ease-in;\r\n      }\r\n" +
+                    "\r\n      .m-loader_square:nth-child(2) span {\r\n        -webkit-animation: animsqu" +
+                    "are2 2s infinite ease-in;\r\n        animation: animsquare2 2s infinite ease-in;\r\n" +
+                    "      }\r\n\r\n      .m-loader_square:nth-child(3) span {\r\n        -webkit-animation" +
+                    ": animsquare3 2s infinite ease-in;\r\n        animation: animsquare3 2s infinite e" +
+                    "ase-in;\r\n      }\r\n\r\n      .m-loader_square:nth-child(4) span {\r\n        -webkit-" +
+                    "animation: animsquare4 2s infinite ease-in;\r\n        animation: animsquare4 2s i" +
+                    "nfinite ease-in;\r\n      }\r\n\r\n      .m-loader_square span:nth-child(1) {\r\n       " +
+                    " -webkit-animation-delay: 0s;\r\n        animation-delay: 0s;\r\n      }\r\n\r\n      .m" +
+                    "-loader_square span:nth-child(2) {\r\n        -webkit-animation-delay: 0.15s;\r\n   " +
+                    "     animation-delay: 0.15s;\r\n      }\r\n\r\n      .m-loader_square span:nth-child(3" +
+                    ") {\r\n        -webkit-animation-delay: 0.3s;\r\n        animation-delay: 0.3s;\r\n   " +
+                    "   }\r\n\r\n      @-webkit-keyframes animsquare1 {\r\n        0%,\r\n        5%,\r\n      " +
+                    "  95%,\r\n        100% {\r\n          -webkit-transform: translate(0px, 0px) rotate(" +
+                    "0deg);\r\n          transform: translate(0px, 0px) rotate(0deg);\r\n        }\r\n     " +
+                    "   30%,\r\n        70% {\r\n          -webkit-transform: translate(-40px, 0px) rotat" +
+                    "e(-90deg);\r\n          transform: translate(-40px, 0px) rotate(-90deg);\r\n        " +
+                    "}\r\n      }\r\n      @keyframes animsquare1 {\r\n        0%,\r\n        5%,\r\n        95" +
+                    "%,\r\n        100% {\r\n          -webkit-transform: translate(0px, 0px) rotate(0deg" +
+                    ");\r\n          transform: translate(0px, 0px) rotate(0deg);\r\n        }\r\n        3" +
+                    "0%,\r\n        70% {\r\n          -webkit-transform: translate(-40px, 0px) rotate(-9" +
+                    "0deg);\r\n          transform: translate(-40px, 0px) rotate(-90deg);\r\n        }\r\n " +
+                    "     }\r\n      @-webkit-keyframes animsquare2 {\r\n        0%,\r\n        10%,\r\n     " +
+                    "   90%,\r\n        100% {\r\n          -webkit-transform: translate(0px, 0px) rotate" +
+                    "(0deg);\r\n          transform: translate(0px, 0px) rotate(0deg);\r\n        }\r\n    " +
+                    "    35%,\r\n        65% {\r\n          -webkit-transform: translate(-40px, 0px) rota" +
+                    "te(-90deg);\r\n          transform: translate(-40px, 0px) rotate(-90deg);\r\n       " +
+                    " }\r\n      }\r\n      @keyframes animsquare2 {\r\n        0%,\r\n        10%,\r\n        " +
+                    "90%,\r\n        100% {\r\n          -webkit-transform: translate(0px, 0px) rotate(0d" +
+                    "eg);\r\n          transform: translate(0px, 0px) rotate(0deg);\r\n        }\r\n       " +
+                    " 35%,\r\n        65% {\r\n          -webkit-transform: translate(-40px, 0px) rotate(" +
+                    "-90deg);\r\n          transform: translate(-40px, 0px) rotate(-90deg);\r\n        }\r" +
+                    "\n      }\r\n      @-webkit-keyframes animsquare3 {\r\n        0%,\r\n        15%,\r\n   " +
+                    "     85%,\r\n        100% {\r\n          -webkit-transform: translate(0px, 0px) rota" +
+                    "te(0deg);\r\n          transform: translate(0px, 0px) rotate(0deg);\r\n        }\r\n  " +
+                    "      40%,\r\n        60% {\r\n          -webkit-transform: translate(-40px, 0px) ro" +
+                    "tate(-90deg);\r\n          transform: translate(-40px, 0px) rotate(-90deg);\r\n     " +
+                    "   }\r\n      }\r\n      @keyframes animsquare3 {\r\n        0%,\r\n        15%,\r\n      " +
+                    "  85%,\r\n        100% {\r\n          -webkit-transform: translate(0px, 0px) rotate(" +
+                    "0deg);\r\n          transform: translate(0px, 0px) rotate(0deg);\r\n        }\r\n     " +
+                    "   40%,\r\n        60% {\r\n          -webkit-transform: translate(-40px, 0px) rotat" +
+                    "e(-90deg);\r\n          transform: translate(-40px, 0px) rotate(-90deg);\r\n        " +
+                    "}\r\n      }\r\n      @-webkit-keyframes animsquare4 {\r\n        0%,\r\n        20%,\r\n " +
+                    "       80%,\r\n        100% {\r\n          -webkit-transform: translate(0px, 0px) ro" +
+                    "tate(0deg);\r\n          transform: translate(0px, 0px) rotate(0deg);\r\n        }\r\n" +
+                    "        45%,\r\n        55% {\r\n          -webkit-transform: translate(-40px, 0px) " +
+                    "rotate(-90deg);\r\n          transform: translate(-40px, 0px) rotate(-90deg);\r\n   " +
+                    "     }\r\n      }\r\n      @keyframes animsquare4 {\r\n        0%,\r\n        20%,\r\n    " +
+                    "    80%,\r\n        100% {\r\n          -webkit-transform: translate(0px, 0px) rotat" +
+                    "e(0deg);\r\n          transform: translate(0px, 0px) rotate(0deg);\r\n        }\r\n   " +
+                    "     45%,\r\n        55% {\r\n          -webkit-transform: translate(-40px, 0px) rot" +
+                    "ate(-90deg);\r\n          transform: translate(-40px, 0px) rotate(-90deg);\r\n      " +
+                    "  }\r\n      }\r\n\r\n      .m-copyright {\r\n        position: absolute;\r\n        left:" +
+                    " 0;\r\n        bottom: 20px;\r\n        width: 100%;\r\n        text-align: center;\r\n " +
+                    "     }\r\n\r\n      .m-copyright_logo {\r\n        position: relative;\r\n        top: 1" +
+                    "0px;\r\n        width: 30px;\r\n      }\r\n    </style>\r\n  </head>\r\n  <body>\r\n    <div" +
+                    " id=\"app\" style=\"display: none\">\r\n      <div class=\"m-loader\">\r\n        <div cla" +
+                    "ss=\"m-loader_main\">\r\n          <div class=\"m-loader_square\"><span></span><span><" +
                     "/span><span></span></div>\r\n          <div class=\"m-loader_square\"><span></span><" +
                     "span></span><span></span></div>\r\n          <div class=\"m-loader_square\"><span></" +
-                    "span><span></span><span></span></div>\r\n        </div>\r\n      </div>\r\n      <div " +
-                    "class=\"m-copyright\">\r\n        <img class=\"m-copyright_logo\" src=\"<%= logo %>\" />" +
-                    "\r\n        <span><%= copyright %></span>\r\n      </div>\r\n    </div>\r\n    <script t" +
-                    "ype=\"module\" src=\"./src/main.js\"></script>\r\n  </body>\r\n</html>\r\n");
+                    "span><span></span><span></span></div>\r\n          <div class=\"m-loader_square\"><s" +
+                    "pan></span><span></span><span></span></div>\r\n        </div>\r\n      </div>\r\n     " +
+                    " <div class=\"m-copyright\">\r\n        <img class=\"m-copyright_logo\" src=\"<%= logo " +
+                    "%>\" />\r\n        <span><%= copyright %></span>\r\n      </div>\r\n    </div>\r\n    <sc" +
+                    "ript type=\"module\" src=\"./src/main.ts\"></script>\r\n  </body>\r\n</html>\r\n");
             return this.GenerationEnvironment.ToString();
         }
     }

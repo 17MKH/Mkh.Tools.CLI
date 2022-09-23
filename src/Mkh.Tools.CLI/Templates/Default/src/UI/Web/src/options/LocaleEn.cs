@@ -7,7 +7,7 @@
 //     重新生成代码，这些更改将会丢失。
 // </auto-generated>
 // ------------------------------------------------------------------------------
-namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
+namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web.src.options
 {
     using System;
     
@@ -15,9 +15,9 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\Eslintrc.tt"
+    #line 1 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\options\LocaleEn.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
-    public partial class Eslintrc : EslintrcBase
+    public partial class LocaleEn : LocaleEnBase
     {
 #line hidden
         /// <summary>
@@ -25,26 +25,37 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
         /// </summary>
         public virtual string TransformText()
         {
-            this.Write(@"{
-  ""root"": true,
-  ""env"": {
-    ""browser"": true,
-    ""es2021"": true,
-    ""node"": true
-  },
-  ""extends"": [
-    ""plugin:vue/vue3-recommended"",
-    ""eslint:recommended"",
-    ""@vue/typescript/recommended"",
-    ""@vue/prettier"",
-    ""@vue/prettier/@typescript-eslint""
-  ],
-  ""parserOptions"": {
-    ""ecmaVersion"": 2021
-  },
-  ""plugins"": [],
-  ""rules"": {}
-}");
+            this.Write("import type { MkhLocaleMessages } from \'mkh-ui\'\r\nimport el from \'element-plus/lib" +
+                    "/locale/lang/en\'\r\nimport mkh from \'mkh-ui/lib/locales/en\'\r\nimport mod_");
+            
+            #line 5 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\options\LocaleEn.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code.ToLower()));
+            
+            #line default
+            #line hidden
+            this.Write(" from \'@/locales/lang/en\'\r\nimport mod_");
+            
+            #line 6 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\options\LocaleEn.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code.ToLower()));
+            
+            #line default
+            #line hidden
+            this.Write("_routes from \'@/locales/lang/en/routes\'\r\n\r\nconst options: MkhLocaleMessages = {\r\n" +
+                    "  name: \'en\',\r\n  el: el,\r\n  mkh: mkh,\r\n  routes: { ...mod_");
+            
+            #line 12 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\options\LocaleEn.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code.ToLower()));
+            
+            #line default
+            #line hidden
+            this.Write("_routes },\r\n  mod: {\r\n    admin: mod_");
+            
+            #line 14 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\options\LocaleEn.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code.ToLower()));
+            
+            #line default
+            #line hidden
+            this.Write(",\r\n  },\r\n  skin: {},\r\n}\r\n\r\nexport default options\r\n");
             return this.GenerationEnvironment.ToString();
         }
     }
@@ -56,7 +67,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
     /// Base class for this transformation
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
-    public class EslintrcBase
+    public class LocaleEnBase
     {
         #region Fields
         private global::System.Text.StringBuilder generationEnvironmentField;

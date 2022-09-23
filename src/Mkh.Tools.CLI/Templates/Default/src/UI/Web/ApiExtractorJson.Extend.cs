@@ -2,7 +2,7 @@
 
 namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web;
 
-public partial class Eslintrc : ITemplateHandler
+public partial class ApiExtractorJson : ITemplateHandler
 {
     public void Save(GenerateModel model)
     {
@@ -11,7 +11,7 @@ public partial class Eslintrc : ITemplateHandler
             Directory.CreateDirectory(dir);
 
         var content = TransformText();
-        var filePath = Path.Combine(dir, ".eslintrc");
+        var filePath = Path.Combine(dir, "api-extractor.json");
         File.WriteAllText(filePath, content, Encoding.UTF8);
     }
 }

@@ -7,7 +7,7 @@
 //     重新生成代码，这些更改将会丢失。
 // </auto-generated>
 // ------------------------------------------------------------------------------
-namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
+namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web.src
 {
     using System;
     
@@ -15,9 +15,9 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\Eslintrc.tt"
+    #line 1 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\MainTs.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
-    public partial class Eslintrc : EslintrcBase
+    public partial class MainTs : MainTsBase
     {
 #line hidden
         /// <summary>
@@ -25,26 +25,31 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
         /// </summary>
         public virtual string TransformText()
         {
-            this.Write(@"{
-  ""root"": true,
-  ""env"": {
-    ""browser"": true,
-    ""es2021"": true,
-    ""node"": true
-  },
-  ""extends"": [
-    ""plugin:vue/vue3-recommended"",
-    ""eslint:recommended"",
-    ""@vue/typescript/recommended"",
-    ""@vue/prettier"",
-    ""@vue/prettier/@typescript-eslint""
-  ],
-  ""parserOptions"": {
-    ""ecmaVersion"": 2021
-  },
-  ""plugins"": [],
-  ""rules"": {}
-}");
+            this.Write("import { bootstrap, useAppCreatedService, useModule } from \'mkh-ui\'\r\nimport \'./op" +
+                    "tions\'\r\nimport mod_admin from \'mkh-mod-admin\'\r\nimport mod_");
+            
+            #line 5 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\MainTs.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code.ToLower()));
+            
+            #line default
+            #line hidden
+            this.Write(" from \'./index\'\r\n\r\nuseModule(mod_admin)\r\nuseModule(mod_");
+            
+            #line 8 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\MainTs.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code.ToLower()));
+            
+            #line default
+            #line hidden
+            this.Write(")\r\n\r\nuseAppCreatedService(({ config }) => {\r\n  config.site.title = {\r\n    \'zh-cn\'" +
+                    ": \'");
+            
+            #line 12 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\MainTs.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Name));
+            
+            #line default
+            #line hidden
+            this.Write("\',\r\n    en: \'\',\r\n  }\r\n\r\n  /** 配置登录组件 */\r\n  config.component.login = \'k\'\r\n})\r\n\r\nbo" +
+                    "otstrap()\r\n");
             return this.GenerationEnvironment.ToString();
         }
     }
@@ -56,7 +61,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
     /// Base class for this transformation
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
-    public class EslintrcBase
+    public class MainTsBase
     {
         #region Fields
         private global::System.Text.StringBuilder generationEnvironmentField;

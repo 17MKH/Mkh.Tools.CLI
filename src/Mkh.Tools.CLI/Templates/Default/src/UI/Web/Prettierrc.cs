@@ -15,7 +15,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\Prettierrc.tt"
+    #line 1 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\Prettierrc.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
     public partial class Prettierrc : PrettierrcBase
     {
@@ -26,7 +26,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
         public virtual string TransformText()
         {
             this.Write("{\r\n  \"tabWidth\": 2,\r\n  \"semi\": false,\r\n  \"singleQuote\": true,\r\n  \"printWidth\": 20" +
-                    "0,\r\n  \"arrowParens\": \"avoid\"\r\n}\r\n");
+                    "0,\r\n  \"vueIndentScriptAndStyle\": true\r\n}\r\n");
             return this.GenerationEnvironment.ToString();
         }
     }

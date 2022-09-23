@@ -61,27 +61,32 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
             #line default
             #line hidden
             this.Write(@""",
-  ""main"": ""lib/index.es.js"",
+  ""type"": ""module"",
+  ""main"": ""lib/index.js"",
   ""scripts"": {
-    ""dev"": ""vite --host --config=./build/app.config.js"",
+    ""dev"": ""vite --host --config=./build/app.config.ts"",
     ""serve"": ""vite preview"",
-    ""build"": ""vite build --config=./build/app.config.js"",
-    ""lib"": ""rimraf lib && vite build --config=./build/lib.config.js && npm run locale"",
-    ""locale"": ""rollup -c node_modules/mkh-ui/build/locales.config.js"",
+    ""build"": ""vue-tsc --noEmit && vite build --config=./build/app.config.ts"",
+    ""lib"": ""npm run clean && vite build --config=./build/lib.config.ts && npm run locales && npm run build:dts"",
+    ""locales"": ""rollup -c ./build/locales.config.ts"",
+    ""build:dts"": ""npm run build-temp-types && npm run patch-types && api-extractor run && rimraf ./.temp"",
+    ""build-temp-types"": ""tsc --emitDeclarationOnly -p ./tsconfig.json --outDir ./.temp"",
+    ""patch-types"": ""ts-node-esm ./build/patch-types.ts"",
+    ""clean"": ""rimraf lib && rimraf public && rimraf dist && rimraf ./.temp"",
     ""cm"": ""rimraf package-lock.json && rimraf node_modules"",
     ""cv"": ""rimraf node_modules/.vite""
   },
   ""dependencies"": {
     ""mkh-mod-admin"": ""^");
             
-            #line 20 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\PackageJson.tt"
+            #line 25 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\PackageJson.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.NPMPackageVersions.Mod_Admin));
             
             #line default
             #line hidden
             this.Write("\",\r\n    \"mkh-ui\": \"^");
             
-            #line 21 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\PackageJson.tt"
+            #line 26 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\PackageJson.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.NPMPackageVersions.UI));
             
             #line default
@@ -89,18 +94,37 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
             this.Write(@"""
   },
   ""devDependencies"": {
-    ""@rollup/plugin-image"": ""^2.1.1"",
-    ""@rollup/pluginutils"": ""^4.1.1"",
-    ""@vitejs/plugin-vue"": ""^1.9.3"",
-    ""@vue/compiler-sfc"": ""^3.2.20"",
-    ""ejs"": ""^3.1.6"",
-    ""eslint"": ""^7.32.0"",
-    ""eslint-config-prettier"": ""^8.3.0"",
-    ""eslint-plugin-vue"": ""^7.20.0"",
-    ""html-minifier-terser"": ""^5.1.1"",
-    ""rimraf"": ""^3.0.2"",
-    ""sass"": ""^1.43.3"",
-    ""vite"": ""^2.6.11""
+    ""@microsoft/api-extractor"": ""^7.29.5"",
+    ""@types/echarts"": ""^4.9.16"",
+    ""@types/ejs"": ""^3.1.1"",
+    ""@types/fs-extra"": ""^9.0.13"",
+    ""@types/html-minifier-terser"": ""^6.1.0"",
+    ""@types/node"": ""^18.0.3"",
+    ""@types/nprogress"": ""^0.2.0"",
+    ""@types/sortablejs"": ""^1.13.0"",
+    ""@typescript-eslint/eslint-plugin"": ""^5.30.5"",
+    ""@typescript-eslint/parser"": ""^5.30.5"",
+    ""@vitejs/plugin-vue"": ""^3.0.1"",
+    ""@vue/eslint-config-prettier"": ""^7.0.0"",
+    ""@vue/eslint-config-typescript"": ""^11.0.0"",
+    ""ejs"": ""^3.1.8"",
+    ""eslint"": ""^8.20.0"",
+    ""eslint-plugin-prettier"": ""^4.2.1"",
+    ""eslint-plugin-vue"": ""^9.2.0"",
+    ""fast-glob"": ""^3.2.11"",
+    ""fs-extra"": ""^10.1.0"",
+    ""html-minifier-terser"": ""^7.0.0"",
+    ""prettier"": ""^2.7.1"",
+    ""rollup"": ""^2.76.0"",
+    ""rollup-plugin-typescript2"": ""^0.32.1"",
+    ""sass"": ""^1.54.5"",
+    ""stylelint"": ""^14.9.1"",
+    ""stylelint-config-recommended"": ""^8.0.0"",
+    ""stylelint-config-standard"": ""^26.0.0"",
+    ""ts-node"": ""^10.9.1"",
+    ""typescript"": ""^4.5.4"",
+    ""vite"": ""^3.0.2"",
+    ""vue-tsc"": ""^0.39.0""
   },
   ""files"": [
     ""lib""

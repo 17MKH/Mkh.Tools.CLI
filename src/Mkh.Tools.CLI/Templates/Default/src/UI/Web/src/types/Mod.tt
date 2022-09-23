@@ -1,0 +1,6 @@
+﻿<#@ template language="C#" #>
+declare module 'virtual:mkh-mod-<#= _model.Module.Code.ToLower() #>*' {
+  import type { MoudleDefinition } from 'mkh-ui'
+  const mod: MoudleDefinition
+  export default mod
+}

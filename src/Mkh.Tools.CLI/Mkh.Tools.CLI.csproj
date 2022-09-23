@@ -8,22 +8,22 @@
 		<ToolCommandName>mkh</ToolCommandName>
 		<AssemblyName>Mkh.Tools.CLI</AssemblyName>
 		<RootNamespace>Mkh.Tools.CLI</RootNamespace>
-		<Version>1.3.3</Version>
+		<Version>1.3.4</Version>
 		<PackageOutputPath>../../_packages</PackageOutputPath>
 	</PropertyGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Http" Version="6.0.0" />
-		<PackageReference Include="Spectre.Console" Version="0.44.0" />
+		<PackageReference Include="Spectre.Console" Version="0.45.0" />
 		<PackageReference Include="System.CodeDom" Version="6.0.0" />
 		<PackageReference Include="System.CommandLine" Version="2.0.0-beta3.22114.1" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Resource Include="Resources\AppResource.resx">
-	    <Generator>ResXFileCodeGenerator</Generator>
-	    <LastGenOutput>AppResource.Designer.cs</LastGenOutput>
-	  </Resource>
+		<Resource Include="Resources\AppResource.resx">
+			<Generator>ResXFileCodeGenerator</Generator>
+			<LastGenOutput>AppResource.Designer.cs</LastGenOutput>
+		</Resource>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -59,21 +59,29 @@
 			<Generator>TextTemplatingFilePreprocessor</Generator>
 			<LastGenOutput>ModuleServicesConfigurator.cs</LastGenOutput>
 		</None>
-		<None Update="Templates\Default\src\UI\Web\build\AppConfigJs.tt">
-		  <Generator>TextTemplatingFilePreprocessor</Generator>
-		  <LastGenOutput>AppConfigJs.cs</LastGenOutput>
+		<None Update="Templates\Default\src\UI\Web\ApiExtractorJson.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>ApiExtractorJson.cs</LastGenOutput>
 		</None>
-		<None Update="Templates\Default\src\UI\Web\build\BaseConfigJs.tt">
-		  <Generator>TextTemplatingFilePreprocessor</Generator>
-		  <LastGenOutput>BaseConfigJs.cs</LastGenOutput>
+		<None Update="Templates\Default\src\UI\Web\build\AppConfigTs.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>AppConfigTs.cs</LastGenOutput>
 		</None>
-		<None Update="Templates\Default\src\UI\Web\build\LibConfigJs.tt">
-		  <Generator>TextTemplatingFilePreprocessor</Generator>
-		  <LastGenOutput>LibConfigJs.cs</LastGenOutput>
+		<None Update="Templates\Default\src\UI\Web\build\BaseConfigTs.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>BaseConfigTs.cs</LastGenOutput>
 		</None>
-		<None Update="Templates\Default\src\UI\Web\build\LocalesConfigJs.tt">
-		  <Generator>TextTemplatingFilePreprocessor</Generator>
-		  <LastGenOutput>LocalesConfigJs.cs</LastGenOutput>
+		<None Update="Templates\Default\src\UI\Web\build\LibConfigTs.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>LibConfigTs.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\UI\Web\build\LocalesConfigTs.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>LocalesConfigTs.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\UI\Web\build\PatchTypesTs.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>PatchTypesTs.cs</LastGenOutput>
 		</None>
 		<None Update="Templates\Default\src\UI\Web\Env.tt">
 			<Generator>TextTemplatingFilePreprocessor</Generator>
@@ -91,13 +99,29 @@
 			<Generator>TextTemplatingFilePreprocessor</Generator>
 			<LastGenOutput>IndexHtml.cs</LastGenOutput>
 		</None>
-		<None Update="Templates\Default\src\UI\Web\src\locales\en\Index.tt">
+		<None Update="Templates\Default\src\UI\Web\src\api\Http.tt">
+		  <Generator>TextTemplatingFilePreprocessor</Generator>
+		  <LastGenOutput>Http.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\UI\Web\src\api\Index.tt">
 		  <Generator>TextTemplatingFilePreprocessor</Generator>
 		  <LastGenOutput>Index.cs</LastGenOutput>
 		</None>
-		<None Update="Templates\Default\src\UI\Web\src\locales\zh_cn\Index.tt">
-		  <Generator>TextTemplatingFilePreprocessor</Generator>
-		  <LastGenOutput>Index.cs</LastGenOutput>
+		<None Update="Templates\Default\src\UI\Web\src\locales\lang\en\Index.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>Index.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\UI\Web\src\locales\IndexTs.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>IndexTs.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\UI\Web\src\locales\lang\en\Routes.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>Routes.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\UI\Web\src\locales\lang\zh_cn\Index.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>Index.cs</LastGenOutput>
 		</None>
 		<None Update="Templates\Default\src\UI\Web\PackageJson.tt">
 			<Generator>TextTemplatingFilePreprocessor</Generator>
@@ -107,17 +131,45 @@
 			<Generator>TextTemplatingFilePreprocessor</Generator>
 			<LastGenOutput>Prettierrc.cs</LastGenOutput>
 		</None>
-		<None Update="Templates\Default\src\UI\Web\src\IndexJs.tt">
+		<None Update="Templates\Default\src\UI\Web\src\IndexTs.tt">
 			<Generator>TextTemplatingFilePreprocessor</Generator>
-			<LastGenOutput>IndexJs.cs</LastGenOutput>
+			<LastGenOutput>IndexTs.cs</LastGenOutput>
 		</None>
-		<None Update="Templates\Default\src\UI\Web\src\MainJs.tt">
+		<None Update="Templates\Default\src\UI\Web\src\locales\lang\zh_cn\Routes.tt">
 			<Generator>TextTemplatingFilePreprocessor</Generator>
-			<LastGenOutput>MainJs.cs</LastGenOutput>
+			<LastGenOutput>Routes.cs</LastGenOutput>
 		</None>
-		<None Update="Templates\Default\src\UI\Web\src\store\StoreJs.tt">
+		<None Update="Templates\Default\src\UI\Web\src\MainTs.tt">
 			<Generator>TextTemplatingFilePreprocessor</Generator>
-			<LastGenOutput>StoreJs.cs</LastGenOutput>
+			<LastGenOutput>MainTs.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\UI\Web\src\options\Index.tt">
+		  <Generator>TextTemplatingFilePreprocessor</Generator>
+		  <LastGenOutput>Index.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\UI\Web\src\options\LocaleEn.tt">
+		  <Generator>TextTemplatingFilePreprocessor</Generator>
+		  <LastGenOutput>LocaleEn.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\UI\Web\src\options\LocaleZhCn.tt">
+		  <Generator>TextTemplatingFilePreprocessor</Generator>
+		  <LastGenOutput>LocaleZhCn.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\UI\Web\src\store\Index.tt">
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>Index.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\UI\Web\src\types\Env.tt">
+		  <Generator>TextTemplatingFilePreprocessor</Generator>
+		  <LastGenOutput>Env.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\UI\Web\src\types\Mod.tt">
+		  <Generator>TextTemplatingFilePreprocessor</Generator>
+		  <LastGenOutput>Mod.cs</LastGenOutput>
+		</None>
+		<None Update="Templates\Default\src\UI\Web\TsConfig.tt">
+		  <Generator>TextTemplatingFilePreprocessor</Generator>
+		  <LastGenOutput>TsConfig.cs</LastGenOutput>
 		</None>
 		<None Update="Templates\Default\src\UI\Web\VsCodeConfig.tt">
 			<Generator>TextTemplatingFilePreprocessor</Generator>
@@ -316,10 +368,10 @@
 			<AutoGen>True</AutoGen>
 			<DependentUpon>IndexJs.tt</DependentUpon>
 		</Compile>
-		<Compile Update="Templates\Default\src\UI\Web\src\store\StoreJs.*">
+		<Compile Update="Templates\Default\src\UI\Web\src\store\Index.*">
 			<DesignTime>True</DesignTime>
 			<AutoGen>True</AutoGen>
-			<DependentUpon>StoreJs.tt</DependentUpon>
+			<DependentUpon>Index.tt</DependentUpon>
 		</Compile>
 		<Compile Update="Templates\Default\src\UI\Web\IndexHtml.*">
 			<DesignTime>True</DesignTime>
@@ -346,12 +398,12 @@
 			<AutoGen>True</AutoGen>
 			<DependentUpon>Npmrc.tt</DependentUpon>
 		</Compile>
-		<Compile Update="Templates\Default\src\UI\Web\src\locales\en\Index.*">
+		<Compile Update="Templates\Default\src\UI\Web\src\locales\lang\en\Index.*">
 			<DesignTime>True</DesignTime>
 			<AutoGen>True</AutoGen>
 			<DependentUpon>Index.tt</DependentUpon>
 		</Compile>
-		<Compile Update="Templates\Default\src\UI\Web\src\locales\zh_cn\Index.*">
+		<Compile Update="Templates\Default\src\UI\Web\src\locales\lang\zh_cn\Index.*">
 			<DesignTime>True</DesignTime>
 			<AutoGen>True</AutoGen>
 			<DependentUpon>Index.tt</DependentUpon>
@@ -366,95 +418,130 @@
 			<AutoGen>True</AutoGen>
 			<DependentUpon>LocalizerEn.tt</DependentUpon>
 		</Compile>
-		<Compile Update="Templates\Default\src\UI\Web\build\BaseConfigJs.*">
+		<Compile Update="Templates\Default\src\UI\Web\build\AppConfigTs.*">
 			<DesignTime>True</DesignTime>
+			<DependentUpon>AppConfigTs.tt</DependentUpon>
 			<AutoGen>True</AutoGen>
-			<DependentUpon>BaseConfigJs.tt</DependentUpon>
 		</Compile>
-		<Compile Update="Templates\Default\src\UI\Web\build\AppConfigJs.*">
+		<Compile Update="Templates\Default\src\UI\Web\build\BaseConfigTs.*">
 			<DesignTime>True</DesignTime>
+			<DependentUpon>BaseConfigTs.tt</DependentUpon>
 			<AutoGen>True</AutoGen>
-			<DependentUpon>AppConfigJs.tt</DependentUpon>
 		</Compile>
-		<Compile Update="Templates\Default\src\UI\Web\build\LibConfigJs.*">
+		<Compile Update="Templates\Default\src\UI\Web\build\LibConfigTs.*">
 			<DesignTime>True</DesignTime>
+			<DependentUpon>LibConfigTs.tt</DependentUpon>
 			<AutoGen>True</AutoGen>
-			<DependentUpon>LibConfigJs.tt</DependentUpon>
 		</Compile>
-		<Compile Update="Templates\Default\src\UI\Web\build\LocalesConfigJs.*">
+		<Compile Update="Templates\Default\src\UI\Web\build\LocalesConfigTs.*">
+			<DesignTime>True</DesignTime>
+			<DependentUpon>LocalesConfigTs.tt</DependentUpon>
+			<AutoGen>True</AutoGen>
+		</Compile>
+		<Compile Update="Templates\Default\src\UI\Web\build\PatchTypesTs.*">
 			<DesignTime>True</DesignTime>
 			<AutoGen>True</AutoGen>
-			<DependentUpon>LocalesConfigJs.tt</DependentUpon>
+			<DependentUpon>PatchTypesTs.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\UI\Web\ApiExtractorJson.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>ApiExtractorJson.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\UI\Web\src\locales\IndexTs.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>IndexTs.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\UI\Web\src\locales\lang\en\Routes.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Routes.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\UI\Web\src\locales\lang\zh_cn\Routes.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Routes.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\UI\Web\src\options\Index.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Index.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\UI\Web\src\options\LocaleEn.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>LocaleEn.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\UI\Web\src\options\LocaleZhCn.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>LocaleZhCn.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\UI\Web\src\types\Env.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Env.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\UI\Web\src\types\Mod.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Mod.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\UI\Web\src\api\Index.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Index.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\UI\Web\src\api\Http.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Http.tt</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\UI\Web\src\MainTs.*">
+			<DependentUpon>MainTs.tt</DependentUpon>
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+		</Compile>
+		<Compile Update="Templates\Default\src\UI\Web\TsConfig.*">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>TsConfig.tt</DependentUpon>
 		</Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="Resources\AppResource.zhCN.Designer.cs">
-	    <DesignTime>True</DesignTime>
-	    <AutoGen>True</AutoGen>
-	    <DependentUpon>AppResource.zhCN.resx</DependentUpon>
-	  </Compile>
-	  <Compile Update="Resources\Language.Designer.cs">
-	    <DesignTime>True</DesignTime>
-	    <AutoGen>True</AutoGen>
-	    <DependentUpon>Language.resx</DependentUpon>
-	  </Compile>
-	  <Compile Update="Resources\Language.enUS.Designer.cs">
-	    <DesignTime>True</DesignTime>
-	    <AutoGen>True</AutoGen>
-	    <DependentUpon>Language.enUS.resx</DependentUpon>
-	  </Compile>
-	  <Compile Update="Templates\Default\src\Core\Csproj.cs">
-	    <DesignTime>True</DesignTime>
-	  </Compile>
-	  <Compile Update="Templates\Default\src\Core\Infrastructure\Localizer.cs">
-	    <DesignTime>True</DesignTime>
-	  </Compile>
-	  <Compile Update="Templates\Default\src\Core\Infrastructure\ModuleServicesConfigurator.cs">
-	    <DesignTime>True</DesignTime>
-	  </Compile>
-	  <Compile Update="Templates\Default\src\Core\Resources\LocalizerEn.cs">
-	    <DesignTime>True</DesignTime>
-	  </Compile>
-	  <Compile Update="Templates\Default\src\UI\Web\build\AppConfigJs.cs">
-	    <DesignTime>True</DesignTime>
-	  </Compile>
-	  <Compile Update="Templates\Default\src\UI\Web\build\BaseConfigJs.cs">
-	    <DesignTime>True</DesignTime>
-	  </Compile>
-	  <Compile Update="Templates\Default\src\UI\Web\build\LibConfigJs.cs">
-	    <DesignTime>True</DesignTime>
-	  </Compile>
-	  <Compile Update="Templates\Default\src\UI\Web\build\LocalesConfigJs.cs">
-	    <DesignTime>True</DesignTime>
-	  </Compile>
-	  <Compile Update="Templates\Default\src\UI\Web\PackageJson.cs">
-	    <DesignTime>True</DesignTime>
-	  </Compile>
-	  <Compile Update="Templates\Default\src\UI\Web\src\MainJs.cs">
-	    <DesignTime>True</DesignTime>
-	  </Compile>
-	  <Compile Update="Templates\Default\src\WebHost\Appsettings.cs">
-	    <DesignTime>True</DesignTime>
-	  </Compile>
-	  <Compile Update="Templates\Default\src\WebHost\Csproj.cs">
-	    <DesignTime>True</DesignTime>
-	  </Compile>
+		<Compile Update="Resources\AppResource.zhCN.Designer.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>AppResource.zhCN.resx</DependentUpon>
+		</Compile>
+		<Compile Update="Resources\Language.Designer.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Language.resx</DependentUpon>
+		</Compile>
+		<Compile Update="Templates\Default\src\UI\Web\src\MainTs.cs">
+		  <DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Update="Templates\Default\src\UI\Web\src\options\Index.cs">
+		  <DesignTime>True</DesignTime>
+		</Compile>
 	</ItemGroup>
 
 	<ItemGroup>
-	  <EmbeddedResource Update="Resources\AppResource.zhCN.resx">
-	    <Generator>ResXFileCodeGenerator</Generator>
-	    <LastGenOutput>AppResource.zhCN.Designer.cs</LastGenOutput>
-	  </EmbeddedResource>
-	  <EmbeddedResource Update="Resources\Language.enUS.resx">
-	    <Generator>ResXFileCodeGenerator</Generator>
-	    <LastGenOutput>Language.enUS.Designer.cs</LastGenOutput>
-	  </EmbeddedResource>
-	  <EmbeddedResource Update="Resources\Language.resx">
-	    <Generator>ResXFileCodeGenerator</Generator>
-	    <LastGenOutput>Language.Designer.cs</LastGenOutput>
-	  </EmbeddedResource>
+		<EmbeddedResource Update="Resources\AppResource.zhCN.resx">
+			<Generator>ResXFileCodeGenerator</Generator>
+			<LastGenOutput>AppResource.zhCN.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Resources\Language.enUS.resx">
+			<Generator>ResXFileCodeGenerator</Generator>
+			<LastGenOutput>Language.enUS.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+		<EmbeddedResource Update="Resources\Language.resx">
+			<Generator>ResXFileCodeGenerator</Generator>
+			<LastGenOutput>Language.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
 	</ItemGroup>
 
 </Project>

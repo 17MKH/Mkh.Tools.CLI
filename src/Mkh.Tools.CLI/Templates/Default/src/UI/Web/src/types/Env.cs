@@ -7,7 +7,7 @@
 //     重新生成代码，这些更改将会丢失。
 // </auto-generated>
 // ------------------------------------------------------------------------------
-namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
+namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web.src.types
 {
     using System;
     
@@ -15,9 +15,9 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\Eslintrc.tt"
+    #line 1 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\types\Env.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
-    public partial class Eslintrc : EslintrcBase
+    public partial class Env : EnvBase
     {
 #line hidden
         /// <summary>
@@ -25,26 +25,10 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
         /// </summary>
         public virtual string TransformText()
         {
-            this.Write(@"{
-  ""root"": true,
-  ""env"": {
-    ""browser"": true,
-    ""es2021"": true,
-    ""node"": true
-  },
-  ""extends"": [
-    ""plugin:vue/vue3-recommended"",
-    ""eslint:recommended"",
-    ""@vue/typescript/recommended"",
-    ""@vue/prettier"",
-    ""@vue/prettier/@typescript-eslint""
-  ],
-  ""parserOptions"": {
-    ""ecmaVersion"": 2021
-  },
-  ""plugins"": [],
-  ""rules"": {}
-}");
+            this.Write("declare module \'*.vue\' {\r\n  import type { DefineComponent } from \'vue\'\r\n  // esli" +
+                    "nt-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/ban-" +
+                    "types\r\n  const component: DefineComponent<{}, {}, any>\r\n  export default compone" +
+                    "nt\r\n}\r\n\r\n");
             return this.GenerationEnvironment.ToString();
         }
     }
@@ -56,7 +40,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
     /// Base class for this transformation
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
-    public class EslintrcBase
+    public class EnvBase
     {
         #region Fields
         private global::System.Text.StringBuilder generationEnvironmentField;

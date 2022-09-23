@@ -7,7 +7,7 @@
 //     重新生成代码，这些更改将会丢失。
 // </auto-generated>
 // ------------------------------------------------------------------------------
-namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
+namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web.src.options
 {
     using System;
     
@@ -15,9 +15,9 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\Eslintrc.tt"
+    #line 1 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\options\Index.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
-    public partial class Eslintrc : EslintrcBase
+    public partial class Index : IndexBase
     {
 #line hidden
         /// <summary>
@@ -25,26 +25,28 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
         /// </summary>
         public virtual string TransformText()
         {
-            this.Write(@"{
-  ""root"": true,
-  ""env"": {
-    ""browser"": true,
-    ""es2021"": true,
-    ""node"": true
+            this.Write(@"import type { BootstrapOptions } from 'mkh-ui'
+import { useBootstrapOptions } from 'mkh-ui'
+import messages_zh_cn from './locale.zh-cn'
+import messages_en from './locale.en'
+
+const options: BootstrapOptions = {
+  locale: {
+    messages: {
+      'zh-cn': messages_zh_cn,
+      en: messages_en,
+    },
   },
-  ""extends"": [
-    ""plugin:vue/vue3-recommended"",
-    ""eslint:recommended"",
-    ""@vue/typescript/recommended"",
-    ""@vue/prettier"",
-    ""@vue/prettier/@typescript-eslint""
-  ],
-  ""parserOptions"": {
-    ""ecmaVersion"": 2021
+  http: {
+    global: {
+      baseURL: import.meta.env.MKH_API_URL,
+    },
   },
-  ""plugins"": [],
-  ""rules"": {}
-}");
+}
+
+useBootstrapOptions(options)
+
+export type MessageSchema = typeof messages_zh_cn");
             return this.GenerationEnvironment.ToString();
         }
     }
@@ -56,7 +58,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
     /// Base class for this transformation
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
-    public class EslintrcBase
+    public class IndexBase
     {
         #region Fields
         private global::System.Text.StringBuilder generationEnvironmentField;

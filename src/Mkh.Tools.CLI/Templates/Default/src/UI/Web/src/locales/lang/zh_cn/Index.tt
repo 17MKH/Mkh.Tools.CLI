@@ -1,0 +1,7 @@
+﻿<#@ template language="C#" #>
+const messages = {
+}
+
+export default messages
+
+export declare type <#= _model.Module.Code #>MessagesSchema = typeof messages
