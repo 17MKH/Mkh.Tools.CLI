@@ -123,7 +123,14 @@ namespace Mkh.Tools.CLI.Templates.Default
             
             #line default
             #line hidden
-            this.Write("-web/package-lock.json");
+            this.Write("-web/package-lock.json\r\n/src/UI/");
+            
+            #line 372 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\Gitignore.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code.ToLower()));
+            
+            #line default
+            #line hidden
+            this.Write("-web/.temp");
             return this.GenerationEnvironment.ToString();
         }
     }

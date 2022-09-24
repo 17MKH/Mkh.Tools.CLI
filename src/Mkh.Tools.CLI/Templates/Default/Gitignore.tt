@@ -369,3 +369,4 @@ MSBuild_Logs
 /nuget_publish_local.ps1
 /src/UI/<#= _model.Module.Code.ToLower() #>-web/lib
 /src/UI/<#= _model.Module.Code.ToLower() #>-web/package-lock.json
+/src/UI/<#= _model.Module.Code.ToLower() #>-web/.temp
