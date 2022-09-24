@@ -2,6 +2,8 @@
 import type { MkhLocaleMessages } from 'mkh-ui'
 import el from 'element-plus/lib/locale/lang/en'
 import mkh from 'mkh-ui/lib/locales/en'
+import mod_admin from 'mkh-mod-admin/lib/locales/en'
+import mod_admin_routes from 'mkh-mod-admin/lib/locales/en/routes.js'
 import mod_<#= _model.Module.Code.ToLower() #> from '@/locales/lang/en'
 import mod_<#= _model.Module.Code.ToLower() #>_routes from '@/locales/lang/en/routes'
 
@@ -9,9 +11,10 @@ const options: MkhLocaleMessages = {
   name: 'en',
   el: el,
   mkh: mkh,
-  routes: { ...mod_<#= _model.Module.Code.ToLower() #>_routes },
+  routes: { ...mod_admin_routes, ...mod_<#= _model.Module.Code.ToLower() #>_routes },
   mod: {
-    admin: mod_<#= _model.Module.Code.ToLower() #>,
+    admin: mod_admin,
+    <#= _model.Module.Code.ToLower() #>: mod_<#= _model.Module.Code.ToLower() #>,
   },
   skin: {},
 }

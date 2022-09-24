@@ -25,32 +25,43 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web.src.options
         /// </summary>
         public virtual string TransformText()
         {
-            this.Write("import type { MkhLocaleMessages } from \'mkh-ui\'\r\nimport el from \'element-plus/lib" +
-                    "/locale/lang/en\'\r\nimport mkh from \'mkh-ui/lib/locales/en\'\r\nimport mod_");
+            this.Write(@"import type { MkhLocaleMessages } from 'mkh-ui'
+import el from 'element-plus/lib/locale/lang/en'
+import mkh from 'mkh-ui/lib/locales/en'
+import mod_admin from 'mkh-mod-admin/lib/locales/en'
+import mod_admin_routes from 'mkh-mod-admin/lib/locales/en/routes.js'
+import mod_");
             
-            #line 5 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\options\LocaleEn.tt"
+            #line 7 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\options\LocaleEn.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code.ToLower()));
             
             #line default
             #line hidden
             this.Write(" from \'@/locales/lang/en\'\r\nimport mod_");
             
-            #line 6 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\options\LocaleEn.tt"
+            #line 8 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\options\LocaleEn.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code.ToLower()));
             
             #line default
             #line hidden
             this.Write("_routes from \'@/locales/lang/en/routes\'\r\n\r\nconst options: MkhLocaleMessages = {\r\n" +
-                    "  name: \'en\',\r\n  el: el,\r\n  mkh: mkh,\r\n  routes: { ...mod_");
+                    "  name: \'en\',\r\n  el: el,\r\n  mkh: mkh,\r\n  routes: { ...mod_admin_routes, ...mod_");
             
-            #line 12 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\options\LocaleEn.tt"
+            #line 14 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\options\LocaleEn.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code.ToLower()));
             
             #line default
             #line hidden
-            this.Write("_routes },\r\n  mod: {\r\n    admin: mod_");
+            this.Write("_routes },\r\n  mod: {\r\n    admin: mod_admin,\r\n    ");
             
-            #line 14 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\options\LocaleEn.tt"
+            #line 17 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\options\LocaleEn.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code.ToLower()));
+            
+            #line default
+            #line hidden
+            this.Write(": mod_");
+            
+            #line 17 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\options\LocaleEn.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code.ToLower()));
             
             #line default
