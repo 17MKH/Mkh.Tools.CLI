@@ -109,7 +109,21 @@ namespace Mkh.Tools.CLI.Templates.Default
                     " VS Code tools) working folder\r\n.ionide/\r\n\r\n# Fody - auto-generated XML schema\r\n" +
                     "FodyWeavers.xsd\r\nMSBuild_Logs\r\n/src/UI/codegen-web/public\r\n/src/UI/codegen-web/p" +
                     "ackage-lock.json\r\n/src/UI/codegen-web/dist\r\n/src/WebHost/wwwroot\r\n/nuget_publish" +
-                    "_local.ps1\r\n");
+                    "_local.ps1\r\n/src/UI/");
+            
+            #line 370 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\Gitignore.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code.ToLower()));
+            
+            #line default
+            #line hidden
+            this.Write("-web/lib\r\n/src/UI/");
+            
+            #line 371 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\Gitignore.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code.ToLower()));
+            
+            #line default
+            #line hidden
+            this.Write("-web/package-lock.json");
             return this.GenerationEnvironment.ToString();
         }
     }

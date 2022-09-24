@@ -4,8 +4,8 @@ import el from 'element-plus/lib/locale/lang/zh-cn'
 import mkh from 'mkh-ui/lib/locales/zh-cn'
 import mod_admin from 'mkh-mod-admin/lib/locales/zh-cn'
 import mod_admin_routes from 'mkh-mod-admin/lib/locales/zh-cn/routes.js'
-import mod_mod_<#= _model.Module.Code.ToLower() #> from '@/locales/lang/zh-cn'
-import mod_mod_<#= _model.Module.Code.ToLower() #>_routes from '@/locales/lang/zh-cn/routes'
+import mod_<#= _model.Module.Code.ToLower() #> from '@/locales/lang/zh-cn'
+import mod_<#= _model.Module.Code.ToLower() #>_routes from '@/locales/lang/zh-cn/routes'
 
 const options: MkhLocaleMessages = {
   name: 'zh-cn',
