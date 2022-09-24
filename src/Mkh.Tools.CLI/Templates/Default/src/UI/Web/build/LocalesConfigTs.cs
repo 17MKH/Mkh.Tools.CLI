@@ -15,7 +15,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web.build
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\build\LocalesConfigTs.tt"
+    #line 1 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\build\LocalesConfigTs.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
     public partial class LocalesConfigTs : LocalesConfigTsBase
     {
@@ -39,7 +39,7 @@ const createConfig = (input, fileName, output) => ({
       format: 'es',
     },
   ],
-  plugins: [typescript({ tsconfigOverride: { compilerOptions: { declaration: false }, include: [input] } })],
+  plugins: [typescript({ tsconfigOverride: { compilerOptions: { declaration: true }, include: [input] } })],
 })
 
 let localePath = path.resolve(rootDir, 'src/locales/lang')

@@ -9,7 +9,7 @@ const useI18n = () => {
       message: {
         mkh: MkhMessagesSchema
         mod: {
-          admin: <#= _model.Module.Code #>MessagesSchema
+          <#= _model.Module.Code.ToLower() #>: <#= _model.Module.Code #>MessagesSchema
         }
       }
     },

@@ -15,7 +15,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web.src.locales
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\locales\IndexTs.tt"
+    #line 1 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\locales\IndexTs.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
     public partial class IndexTs : IndexTsBase
     {
@@ -28,16 +28,23 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web.src.locales
             this.Write("import { useI18n as usei18n } from \'vue-i18n\'\r\nimport { Locale, MkhMessagesSchema" +
                     " } from \'mkh-ui\'\r\nimport { ");
             
-            #line 4 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\locales\IndexTs.tt"
+            #line 4 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\locales\IndexTs.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code));
             
             #line default
             #line hidden
             this.Write("MessagesSchema } from \'@/locales/lang/zh-cn/index\'\r\n\r\nconst useI18n = () => {\r\n  " +
                     "return usei18n<\r\n    {\r\n      message: {\r\n        mkh: MkhMessagesSchema\r\n      " +
-                    "  mod: {\r\n          admin: ");
+                    "  mod: {\r\n          ");
             
-            #line 12 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\locales\IndexTs.tt"
+            #line 12 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\locales\IndexTs.tt"
+            this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code.ToLower()));
+            
+            #line default
+            #line hidden
+            this.Write(": ");
+            
+            #line 12 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\locales\IndexTs.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code));
             
             #line default
