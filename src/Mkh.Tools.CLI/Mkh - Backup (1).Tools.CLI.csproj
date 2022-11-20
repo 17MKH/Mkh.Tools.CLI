@@ -8,7 +8,7 @@
 		<ToolCommandName>mkh</ToolCommandName>
 		<AssemblyName>Mkh.Tools.CLI</AssemblyName>
 		<RootNamespace>Mkh.Tools.CLI</RootNamespace>
-		<Version>1.3.9</Version>
+		<Version>1.3.8</Version>
 		<PackageOutputPath>../../_packages</PackageOutputPath>
 	</PropertyGroup>
 
@@ -171,13 +171,12 @@
 		  <Generator>TextTemplatingFilePreprocessor</Generator>
 		  <LastGenOutput>TsConfig.cs</LastGenOutput>
 		</None>
-		<None Update="Templates\Default\src\UI\Web\TsBaseConfig.tt">
-		  <Generator>TextTemplatingFilePreprocessor</Generator>
-		  <LastGenOutput>TsBaseConfig.cs</LastGenOutput>
+		<None Update="Templates\Default\src\UI\Web\TsConfigBase.tt">
+		  <Generator>TextTemplatingFileGenerator</Generator>
 		</None>
-		<None Update="Templates\Default\src\UI\Web\TsLibConfig.tt">
+		<None Update="Templates\Default\src\UI\Web\TsConfigLib.tt">
 		  <Generator>TextTemplatingFilePreprocessor</Generator>
-		  <LastGenOutput>TsLibConfig.cs</LastGenOutput>
+		  <LastGenOutput>TsConfigLib.cs</LastGenOutput>
 		</None>
 		<None Update="Templates\Default\src\UI\Web\VsCodeConfig.tt">
 			<Generator>TextTemplatingFilePreprocessor</Generator>
@@ -521,11 +520,6 @@
 			<AutoGen>True</AutoGen>
 			<DependentUpon>TsConfigLib.tt</DependentUpon>
 		</Compile>
-		<Compile Update="Templates\Default\src\UI\Web\TsConfigBase.*">
-			<DesignTime>True</DesignTime>
-			<AutoGen>True</AutoGen>
-			<DependentUpon>TsConfigBase.tt</DependentUpon>
-		</Compile>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -538,22 +532,6 @@
 			<DesignTime>True</DesignTime>
 			<AutoGen>True</AutoGen>
 			<DependentUpon>Language.resx</DependentUpon>
-		</Compile>
-		<Compile Update="Templates\Default\src\UI\Web\TsBaseConfig.cs">
-		  <DependentUpon>TsBaseConfig.tt</DependentUpon>
-		  <DesignTime>True</DesignTime>
-		  <AutoGen>True</AutoGen>
-		</Compile>
-		<Compile Update="Templates\Default\src\UI\Web\TsBaseConfig.Extend.cs">
-		  <DependentUpon>TsBaseConfig.tt</DependentUpon>
-		</Compile>
-		<Compile Update="Templates\Default\src\UI\Web\TsLibConfig.Extend.cs">
-		  <DependentUpon>TsLibConfig.tt</DependentUpon>
-		</Compile>
-		<Compile Update="Templates\Default\src\UI\Web\TsLibConfig.cs">
-		  <DependentUpon>TsLibConfig.tt</DependentUpon>
-		  <DesignTime>True</DesignTime>
-		  <AutoGen>True</AutoGen>
 		</Compile>
 	</ItemGroup>
 

@@ -25,41 +25,8 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
         /// </summary>
         public virtual string TransformText()
         {
-            this.Write(@"{
-    ""compilerOptions"": {
-        ""target"": ""esnext"",
-        ""useDefineForClassFields"": true,
-        ""module"": ""esnext"",
-        ""moduleResolution"": ""node"",
-        ""strict"": true,
-        ""jsx"": ""preserve"",
-        ""sourceMap"": true,
-        ""resolveJsonModule"": true,
-        ""isolatedModules"": true,
-        ""esModuleInterop"": true,
-        ""declaration"": true,
-        ""noImplicitAny"": false,
-        ""lib"": [
-            ""esnext"",
-            ""dom""
-        ],
-        ""skipLibCheck"": true,
-        ""baseUrl"": ""."",
-        ""paths"": {
-            ""@/*"": [
-                ""src/*""
-            ]
-        },
-        ""types"": [
-            ""vite/client""
-        ]
-    },
-    ""include"": [
-        ""src/**/*.ts"",
-        ""src/**/*.d.ts"",
-        ""src/**/*.vue""
-    ]
-}");
+            this.Write("{\r\n    \"extends\": \"./tsconfig.base.json\",\r\n    \"include\": [\r\n        \"build/**/*." +
+                    "ts\",\r\n    ]\r\n}");
             return this.GenerationEnvironment.ToString();
         }
     }
