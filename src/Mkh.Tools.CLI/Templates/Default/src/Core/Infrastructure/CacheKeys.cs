@@ -15,7 +15,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.Core.Infrastructure
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\CacheKeys.tt"
+    #line 1 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\CacheKeys.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
     public partial class CacheKeys : CacheKeysBase
     {
@@ -27,21 +27,21 @@ namespace Mkh.Tools.CLI.Templates.Default.src.Core.Infrastructure
         {
             this.Write("using System;\r\nusing Mkh.Utils.Annotations;\r\n\r\nnamespace Mkh.Mod.");
             
-            #line 5 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\CacheKeys.tt"
+            #line 5 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\CacheKeys.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code));
             
             #line default
             #line hidden
             this.Write(".Core.Infrastructure;\r\n\r\n/// <summary>\r\n/// ");
             
-            #line 8 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\CacheKeys.tt"
+            #line 8 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\CacheKeys.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Remarks));
             
             #line default
             #line hidden
             this.Write("模块缓存键\r\n/// </summary>\r\n[SingletonInject]\r\npublic class ");
             
-            #line 11 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\CacheKeys.tt"
+            #line 11 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\CacheKeys.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code));
             
             #line default

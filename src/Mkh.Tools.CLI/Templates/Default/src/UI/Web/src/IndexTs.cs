@@ -15,7 +15,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web.src
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\IndexTs.tt"
+    #line 1 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\IndexTs.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
     public partial class IndexTs : IndexTsBase
     {
@@ -27,7 +27,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web.src
         {
             this.Write("import mod from \'virtual:mkh-mod-");
             
-            #line 2 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\IndexTs.tt"
+            #line 2 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\IndexTs.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code.ToLower()));
             
             #line default

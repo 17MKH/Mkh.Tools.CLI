@@ -15,7 +15,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web.src.api
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\api\Http.tt"
+    #line 1 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\api\Http.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
     public partial class Http : HttpBase
     {
@@ -28,7 +28,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web.src.api
             this.Write("import { createHttp, bootstrapOptions } from \'mkh-ui\'\r\nimport mod from \'virtual:m" +
                     "kh-mod-");
             
-            #line 3 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\api\Http.tt"
+            #line 3 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\api\Http.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code.ToLower()));
             
             #line default

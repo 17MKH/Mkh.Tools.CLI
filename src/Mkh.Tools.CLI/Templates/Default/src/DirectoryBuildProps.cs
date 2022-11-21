@@ -15,7 +15,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\DirectoryBuildProps.tt"
+    #line 1 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\DirectoryBuildProps.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
     public partial class DirectoryBuildProps : DirectoryBuildPropsBase
     {
@@ -27,35 +27,35 @@ namespace Mkh.Tools.CLI.Templates.Default.src
         {
             this.Write("<Project>\r\n\t<PropertyGroup>\r\n\t\t<Id>");
             
-            #line 4 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\DirectoryBuildProps.tt"
+            #line 4 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\DirectoryBuildProps.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.No + 6220));
             
             #line default
             #line hidden
             this.Write("</Id>\r\n\t\t<Code>");
             
-            #line 5 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\DirectoryBuildProps.tt"
+            #line 5 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\DirectoryBuildProps.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code));
             
             #line default
             #line hidden
             this.Write("</Code>\r\n\t\t<Name>");
             
-            #line 6 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\DirectoryBuildProps.tt"
+            #line 6 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\DirectoryBuildProps.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Name));
             
             #line default
             #line hidden
             this.Write("</Name>\r\n\t\t<Authors>");
             
-            #line 7 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\DirectoryBuildProps.tt"
+            #line 7 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\DirectoryBuildProps.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Company));
             
             #line default
             #line hidden
             this.Write("</Authors>\r\n\t\t<Icon>");
             
-            #line 8 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\DirectoryBuildProps.tt"
+            #line 8 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\DirectoryBuildProps.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Icon));
             
             #line default
@@ -77,14 +77,14 @@ namespace Mkh.Tools.CLI.Templates.Default.src
 		<PackageOutputPath>$(SolutionDir)\_packages</PackageOutputPath>
 		<Company>");
             
-            #line 23 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\DirectoryBuildProps.tt"
+            #line 23 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\DirectoryBuildProps.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Company));
             
             #line default
             #line hidden
             this.Write("</Company>\r\n\t\t<Copyright>");
             
-            #line 24 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\DirectoryBuildProps.tt"
+            #line 24 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\DirectoryBuildProps.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Copyright));
             
             #line default

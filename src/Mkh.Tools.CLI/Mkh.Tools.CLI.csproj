@@ -2,20 +2,20 @@
 
 	<PropertyGroup>
 		<OutputType>Exe</OutputType>
-		<TargetFramework>net6.0</TargetFramework>
+		<TargetFrameworks>net6.0;net7.0</TargetFrameworks>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<PackAsTool>true</PackAsTool>
 		<ToolCommandName>mkh</ToolCommandName>
 		<AssemblyName>Mkh.Tools.CLI</AssemblyName>
 		<RootNamespace>Mkh.Tools.CLI</RootNamespace>
-		<Version>1.3.9</Version>
+		<Version>1.3.10</Version>
 		<PackageOutputPath>../../_packages</PackageOutputPath>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Extensions.Http" Version="6.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0" />
 		<PackageReference Include="Spectre.Console" Version="0.45.0" />
-		<PackageReference Include="System.CodeDom" Version="6.0.0" />
+		<PackageReference Include="System.CodeDom" Version="7.0.0" />
 		<PackageReference Include="System.CommandLine" Version="2.0.0-beta3.22114.1" />
 	</ItemGroup>
 
@@ -100,12 +100,12 @@
 			<LastGenOutput>IndexHtml.cs</LastGenOutput>
 		</None>
 		<None Update="Templates\Default\src\UI\Web\src\api\Http.tt">
-		  <Generator>TextTemplatingFilePreprocessor</Generator>
-		  <LastGenOutput>Http.cs</LastGenOutput>
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>Http.cs</LastGenOutput>
 		</None>
 		<None Update="Templates\Default\src\UI\Web\src\api\Index.tt">
-		  <Generator>TextTemplatingFilePreprocessor</Generator>
-		  <LastGenOutput>Index.cs</LastGenOutput>
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>Index.cs</LastGenOutput>
 		</None>
 		<None Update="Templates\Default\src\UI\Web\src\locales\lang\en\Index.tt">
 			<Generator>TextTemplatingFilePreprocessor</Generator>
@@ -144,40 +144,40 @@
 			<LastGenOutput>MainTs.cs</LastGenOutput>
 		</None>
 		<None Update="Templates\Default\src\UI\Web\src\options\Index.tt">
-		  <Generator>TextTemplatingFilePreprocessor</Generator>
-		  <LastGenOutput>Index.cs</LastGenOutput>
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>Index.cs</LastGenOutput>
 		</None>
 		<None Update="Templates\Default\src\UI\Web\src\options\LocaleEn.tt">
-		  <Generator>TextTemplatingFilePreprocessor</Generator>
-		  <LastGenOutput>LocaleEn.cs</LastGenOutput>
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>LocaleEn.cs</LastGenOutput>
 		</None>
 		<None Update="Templates\Default\src\UI\Web\src\options\LocaleZhCn.tt">
-		  <Generator>TextTemplatingFilePreprocessor</Generator>
-		  <LastGenOutput>LocaleZhCn.cs</LastGenOutput>
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>LocaleZhCn.cs</LastGenOutput>
 		</None>
 		<None Update="Templates\Default\src\UI\Web\src\store\Index.tt">
 			<Generator>TextTemplatingFilePreprocessor</Generator>
 			<LastGenOutput>Index.cs</LastGenOutput>
 		</None>
 		<None Update="Templates\Default\src\UI\Web\src\types\Env.tt">
-		  <Generator>TextTemplatingFilePreprocessor</Generator>
-		  <LastGenOutput>Env.cs</LastGenOutput>
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>Env.cs</LastGenOutput>
 		</None>
 		<None Update="Templates\Default\src\UI\Web\src\types\Mod.tt">
-		  <Generator>TextTemplatingFilePreprocessor</Generator>
-		  <LastGenOutput>Mod.cs</LastGenOutput>
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>Mod.cs</LastGenOutput>
 		</None>
 		<None Update="Templates\Default\src\UI\Web\TsConfig.tt">
-		  <Generator>TextTemplatingFilePreprocessor</Generator>
-		  <LastGenOutput>TsConfig.cs</LastGenOutput>
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>TsConfig.cs</LastGenOutput>
 		</None>
 		<None Update="Templates\Default\src\UI\Web\TsBaseConfig.tt">
-		  <Generator>TextTemplatingFilePreprocessor</Generator>
-		  <LastGenOutput>TsBaseConfig.cs</LastGenOutput>
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>TsBaseConfig.cs</LastGenOutput>
 		</None>
 		<None Update="Templates\Default\src\UI\Web\TsLibConfig.tt">
-		  <Generator>TextTemplatingFilePreprocessor</Generator>
-		  <LastGenOutput>TsLibConfig.cs</LastGenOutput>
+			<Generator>TextTemplatingFilePreprocessor</Generator>
+			<LastGenOutput>TsLibConfig.cs</LastGenOutput>
 		</None>
 		<None Update="Templates\Default\src\UI\Web\VsCodeConfig.tt">
 			<Generator>TextTemplatingFilePreprocessor</Generator>
@@ -540,20 +540,20 @@
 			<DependentUpon>Language.resx</DependentUpon>
 		</Compile>
 		<Compile Update="Templates\Default\src\UI\Web\TsBaseConfig.cs">
-		  <DependentUpon>TsBaseConfig.tt</DependentUpon>
-		  <DesignTime>True</DesignTime>
-		  <AutoGen>True</AutoGen>
+			<DependentUpon>TsBaseConfig.tt</DependentUpon>
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
 		</Compile>
 		<Compile Update="Templates\Default\src\UI\Web\TsBaseConfig.Extend.cs">
-		  <DependentUpon>TsBaseConfig.tt</DependentUpon>
+			<DependentUpon>TsBaseConfig.tt</DependentUpon>
 		</Compile>
 		<Compile Update="Templates\Default\src\UI\Web\TsLibConfig.Extend.cs">
-		  <DependentUpon>TsLibConfig.tt</DependentUpon>
+			<DependentUpon>TsLibConfig.tt</DependentUpon>
 		</Compile>
 		<Compile Update="Templates\Default\src\UI\Web\TsLibConfig.cs">
-		  <DependentUpon>TsLibConfig.tt</DependentUpon>
-		  <DesignTime>True</DesignTime>
-		  <AutoGen>True</AutoGen>
+			<DependentUpon>TsLibConfig.tt</DependentUpon>
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
 		</Compile>
 	</ItemGroup>
 

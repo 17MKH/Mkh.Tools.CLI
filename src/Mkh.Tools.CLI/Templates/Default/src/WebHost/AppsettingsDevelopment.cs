@@ -15,7 +15,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.WebHost
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\WebHost\AppsettingsDevelopment.tt"
+    #line 1 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\WebHost\AppsettingsDevelopment.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
     public partial class AppsettingsDevelopment : AppsettingsDevelopmentBase
     {

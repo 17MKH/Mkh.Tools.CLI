@@ -15,7 +15,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\EnvDevelopment.tt"
+    #line 1 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\EnvDevelopment.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
     public partial class EnvDevelopment : EnvDevelopmentBase
     {
@@ -27,7 +27,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
         {
             this.Write("MKH_API_URL=http://localhost:");
             
-            #line 2 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\EnvDevelopment.tt"
+            #line 2 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\EnvDevelopment.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.No + 6220));
             
             #line default

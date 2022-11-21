@@ -15,7 +15,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web.src.locales.lang.zh_cn
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\locales\lang\zh_cn\Index.tt"
+    #line 1 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\locales\lang\zh_cn\Index.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
     public partial class Index : IndexBase
     {
@@ -27,7 +27,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web.src.locales.lang.zh_cn
         {
             this.Write("const messages = {\r\n}\r\n\r\nexport default messages\r\n\r\nexport declare type ");
             
-            #line 7 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\locales\lang\zh_cn\Index.tt"
+            #line 7 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\locales\lang\zh_cn\Index.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code));
             
             #line default

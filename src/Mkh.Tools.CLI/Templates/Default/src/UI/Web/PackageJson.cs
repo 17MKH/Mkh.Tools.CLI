@@ -15,7 +15,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\PackageJson.tt"
+    #line 1 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\PackageJson.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
     public partial class PackageJson : PackageJsonBase
     {
@@ -27,35 +27,35 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
         {
             this.Write("{\r\n  \"id\": ");
             
-            #line 3 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\PackageJson.tt"
+            #line 3 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\PackageJson.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.No));
             
             #line default
             #line hidden
             this.Write(",\r\n  \"name\": \"mkh-mod-");
             
-            #line 4 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\PackageJson.tt"
+            #line 4 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\PackageJson.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code.ToLower()));
             
             #line default
             #line hidden
             this.Write("\",\r\n  \"label\": \"");
             
-            #line 5 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\PackageJson.tt"
+            #line 5 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\PackageJson.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Name));
             
             #line default
             #line hidden
             this.Write("\",\r\n  \"version\": \"1.0.0\",\r\n  \"icon\": \"");
             
-            #line 7 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\PackageJson.tt"
+            #line 7 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\PackageJson.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Icon));
             
             #line default
             #line hidden
             this.Write("\",\r\n  \"description\": \"");
             
-            #line 8 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\PackageJson.tt"
+            #line 8 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\PackageJson.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Remarks));
             
             #line default
@@ -79,14 +79,14 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web
   ""dependencies"": {
     ""mkh-mod-admin"": ""^");
             
-            #line 25 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\PackageJson.tt"
+            #line 25 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\PackageJson.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.NPMPackageVersions.Mod_Admin));
             
             #line default
             #line hidden
             this.Write("\",\r\n    \"mkh-ui\": \"^");
             
-            #line 26 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\PackageJson.tt"
+            #line 26 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\PackageJson.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.NPMPackageVersions.UI));
             
             #line default

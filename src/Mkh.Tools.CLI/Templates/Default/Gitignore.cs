@@ -15,7 +15,7 @@ namespace Mkh.Tools.CLI.Templates.Default
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\Gitignore.tt"
+    #line 1 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\Gitignore.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
     public partial class Gitignore : GitignoreBase
     {
@@ -111,21 +111,21 @@ namespace Mkh.Tools.CLI.Templates.Default
                     "ackage-lock.json\r\n/src/UI/codegen-web/dist\r\n/src/WebHost/wwwroot\r\n/nuget_publish" +
                     "_local.ps1\r\n/src/UI/");
             
-            #line 370 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\Gitignore.tt"
+            #line 370 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\Gitignore.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code.ToLower()));
             
             #line default
             #line hidden
             this.Write("-web/lib\r\n/src/UI/");
             
-            #line 371 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\Gitignore.tt"
+            #line 371 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\Gitignore.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code.ToLower()));
             
             #line default
             #line hidden
             this.Write("-web/package-lock.json\r\n/src/UI/");
             
-            #line 372 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\Gitignore.tt"
+            #line 372 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\Gitignore.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code.ToLower()));
             
             #line default

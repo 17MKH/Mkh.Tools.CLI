@@ -15,7 +15,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.WebHost
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\WebHost\Appsettings.tt"
+    #line 1 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\WebHost\Appsettings.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
     public partial class Appsettings : AppsettingsBase
     {
@@ -27,7 +27,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.WebHost
         {
             this.Write("{\r\n  //主机配置\r\n  \"Host\": {\r\n    //绑定URL\r\n    \"Urls\": \"http://*:");
             
-            #line 6 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\WebHost\Appsettings.tt"
+            #line 6 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\WebHost\Appsettings.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.No + 6220));
             
             #line default
@@ -53,7 +53,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.WebHost
                     " {\r\n      \"Admin\": {\r\n        \"Config\": {\r\n          //创建账户时默认密码\r\n          \"Def" +
                     "aultPassword\": \"123456789\"\r\n        }\r\n      },\r\n      \"");
             
-            #line 74 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\WebHost\Appsettings.tt"
+            #line 74 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\WebHost\Appsettings.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code));
             
             #line default
@@ -78,7 +78,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.WebHost
         //密钥
         ""Key"": """);
             
-            #line 92 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\WebHost\Appsettings.tt"
+            #line 92 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\WebHost\Appsettings.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.JwtKey));
             
             #line default

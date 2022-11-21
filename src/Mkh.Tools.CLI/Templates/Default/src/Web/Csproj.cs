@@ -15,7 +15,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.Web
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Web\Csproj.tt"
+    #line 1 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Web\Csproj.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
     public partial class Csproj : CsprojBase
     {
@@ -29,14 +29,14 @@ namespace Mkh.Tools.CLI.Templates.Default.src.Web
                     "/TargetFramework>\r\n\t</PropertyGroup>\r\n\r\n\t<ItemGroup>\r\n\t\t<PackageReference Includ" +
                     "e=\"Mkh.Auth.Abstractions\" Version=\"");
             
-            #line 9 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Web\Csproj.tt"
+            #line 9 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Web\Csproj.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.NuGetPackageVersions.Auth_Abstractions));
             
             #line default
             #line hidden
             this.Write("\" />\r\n\t\t<PackageReference Include=\"Mkh.Module.Web\" Version=\"");
             
-            #line 10 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Web\Csproj.tt"
+            #line 10 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Web\Csproj.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.NuGetPackageVersions.Module_Web));
             
             #line default

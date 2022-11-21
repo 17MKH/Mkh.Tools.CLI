@@ -15,7 +15,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web.src
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\MainTs.tt"
+    #line 1 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\MainTs.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
     public partial class MainTs : MainTsBase
     {
@@ -28,14 +28,14 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web.src
             this.Write("import { bootstrap, useAppCreatedService, useModule } from \'mkh-ui\'\r\nimport \'./op" +
                     "tions\'\r\nimport mod_admin from \'mkh-mod-admin\'\r\nimport mod_");
             
-            #line 5 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\MainTs.tt"
+            #line 5 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\MainTs.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code.ToLower()));
             
             #line default
             #line hidden
             this.Write(" from \'./index\'\r\n\r\nuseModule(mod_admin)\r\nuseModule(mod_");
             
-            #line 8 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\MainTs.tt"
+            #line 8 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\MainTs.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code.ToLower()));
             
             #line default
@@ -43,7 +43,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.UI.Web.src
             this.Write(")\r\n\r\nuseAppCreatedService(({ config }) => {\r\n  config.site.title = {\r\n    \'zh-cn\'" +
                     ": \'");
             
-            #line 12 "D:\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\MainTs.tt"
+            #line 12 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\UI\Web\src\MainTs.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Name));
             
             #line default

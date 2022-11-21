@@ -15,7 +15,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.WebHost.Properties
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\WebHost\Properties\LaunchSettings.tt"
+    #line 1 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\WebHost\Properties\LaunchSettings.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
     public partial class LaunchSettings : LaunchSettingsBase
     {
@@ -29,7 +29,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.WebHost.Properties
                     "netRunMessages\": \"true\",\r\n      \"launchBrowser\": true,\r\n      \"launchUrl\": \"swag" +
                     "ger\",\r\n      \"applicationUrl\": \"http://localhost:");
             
-            #line 9 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\WebHost\Properties\LaunchSettings.tt"
+            #line 9 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\WebHost\Properties\LaunchSettings.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.No + 6220));
             
             #line default

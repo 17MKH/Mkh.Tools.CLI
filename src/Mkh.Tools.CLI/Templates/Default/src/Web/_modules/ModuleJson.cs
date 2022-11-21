@@ -15,7 +15,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.Web._modules
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Web\_modules\ModuleJson.tt"
+    #line 1 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Web\_modules\ModuleJson.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
     public partial class ModuleJson : ModuleJsonBase
     {
@@ -27,42 +27,42 @@ namespace Mkh.Tools.CLI.Templates.Default.src.Web._modules
         {
             this.Write("{\"Id\": ");
             
-            #line 2 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Web\_modules\ModuleJson.tt"
+            #line 2 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Web\_modules\ModuleJson.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.No + 6220));
             
             #line default
             #line hidden
             this.Write(",\"Name\":\"");
             
-            #line 2 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Web\_modules\ModuleJson.tt"
+            #line 2 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Web\_modules\ModuleJson.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Name));
             
             #line default
             #line hidden
             this.Write("\",\"Code\":\"");
             
-            #line 2 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Web\_modules\ModuleJson.tt"
+            #line 2 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Web\_modules\ModuleJson.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code));
             
             #line default
             #line hidden
             this.Write("\",\"Icon\":\"");
             
-            #line 2 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Web\_modules\ModuleJson.tt"
+            #line 2 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Web\_modules\ModuleJson.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Icon));
             
             #line default
             #line hidden
             this.Write("\",\"Version\":\"1.0.0\",\"Description\":\"17MKH Module ");
             
-            #line 2 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Web\_modules\ModuleJson.tt"
+            #line 2 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Web\_modules\ModuleJson.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code));
             
             #line default
             #line hidden
             this.Write("(");
             
-            #line 2 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Web\_modules\ModuleJson.tt"
+            #line 2 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Web\_modules\ModuleJson.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Name));
             
             #line default

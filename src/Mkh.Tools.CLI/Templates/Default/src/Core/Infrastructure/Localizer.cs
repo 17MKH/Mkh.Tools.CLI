@@ -15,7 +15,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.Core.Infrastructure
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\Localizer.tt"
+    #line 1 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\Localizer.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
     public partial class Localizer : LocalizerBase
     {
@@ -28,35 +28,35 @@ namespace Mkh.Tools.CLI.Templates.Default.src.Core.Infrastructure
             this.Write("using Microsoft.Extensions.Localization;\r\nusing Mkh.Module.Core;\r\nusing Mkh.Utils" +
                     ".Annotations;\r\n\r\nnamespace Mkh.Mod.");
             
-            #line 6 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\Localizer.tt"
+            #line 6 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\Localizer.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code));
             
             #line default
             #line hidden
             this.Write(".Core.Infrastructure\r\n{\r\n    /// <summary>\r\n    /// ");
             
-            #line 9 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\Localizer.tt"
+            #line 9 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\Localizer.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Remarks));
             
             #line default
             #line hidden
             this.Write(" 多语言\r\n    /// </summary>\r\n    [SingletonInject(true)]\r\n    public class ");
             
-            #line 12 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\Localizer.tt"
+            #line 12 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\Localizer.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code));
             
             #line default
             #line hidden
             this.Write("Localizer : ModuleLocalizerAbstract\r\n    {\r\n        public ");
             
-            #line 14 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\Localizer.tt"
+            #line 14 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\Localizer.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code));
             
             #line default
             #line hidden
             this.Write("Localizer(IStringLocalizer<");
             
-            #line 14 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\Localizer.tt"
+            #line 14 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\Localizer.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code));
             
             #line default

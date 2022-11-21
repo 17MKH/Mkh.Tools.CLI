@@ -15,7 +15,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.Core.Infrastructure
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\ModuleServicesConfigurator.tt"
+    #line 1 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\ModuleServicesConfigurator.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
     public partial class ModuleServicesConfigurator : ModuleServicesConfiguratorBase
     {
@@ -27,7 +27,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.Core.Infrastructure
         {
             this.Write("using System;\r\nusing Mkh.Module.Abstractions;\r\n\r\nnamespace Mkh.Mod.");
             
-            #line 5 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\ModuleServicesConfigurator.tt"
+            #line 5 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\ModuleServicesConfigurator.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code));
             
             #line default

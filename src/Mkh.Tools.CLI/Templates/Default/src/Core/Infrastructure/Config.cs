@@ -15,7 +15,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.Core.Infrastructure
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\Config.tt"
+    #line 1 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\Config.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
     public partial class Config : ConfigBase
     {
@@ -27,21 +27,21 @@ namespace Mkh.Tools.CLI.Templates.Default.src.Core.Infrastructure
         {
             this.Write("using Mkh.Config.Abstractions;\r\n\r\nnamespace Mkh.Mod.");
             
-            #line 4 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\Config.tt"
+            #line 4 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\Config.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code));
             
             #line default
             #line hidden
             this.Write(".Core.Infrastructure;\r\n\r\n/// <summary>\r\n/// ");
             
-            #line 7 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\Config.tt"
+            #line 7 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\Config.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Remarks));
             
             #line default
             #line hidden
             this.Write("配置类\r\n/// </summary>\r\npublic class ");
             
-            #line 9 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\Config.tt"
+            #line 9 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Core\Infrastructure\Config.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code));
             
             #line default

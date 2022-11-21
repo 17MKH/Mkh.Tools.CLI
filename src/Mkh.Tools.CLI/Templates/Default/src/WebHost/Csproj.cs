@@ -15,7 +15,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.WebHost
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\WebHost\Csproj.tt"
+    #line 1 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\WebHost\Csproj.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
     public partial class Csproj : CsprojBase
     {
@@ -29,21 +29,21 @@ namespace Mkh.Tools.CLI.Templates.Default.src.WebHost
                     "6.0</TargetFramework>\r\n\t</PropertyGroup>\r\n\r\n\t<ItemGroup>\r\n\t\t<PackageReference In" +
                     "clude=\"Mkh.Data.Adapter.Sqlite\" Version=\"");
             
-            #line 9 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\WebHost\Csproj.tt"
+            #line 9 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\WebHost\Csproj.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.NuGetPackageVersions.Data_Adapter_Sqlite));
             
             #line default
             #line hidden
             this.Write("\" />\r\n\t\t<PackageReference Include=\"Mkh.Host.Web\" Version=\"");
             
-            #line 10 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\WebHost\Csproj.tt"
+            #line 10 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\WebHost\Csproj.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.NuGetPackageVersions.Host_Web));
             
             #line default
             #line hidden
             this.Write("\" />\r\n\t\t<PackageReference Include=\"Mkh.Mod.Admin.Web\" Version=\"");
             
-            #line 11 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\WebHost\Csproj.tt"
+            #line 11 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\WebHost\Csproj.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.NuGetPackageVersions.Mod_Admin_Web));
             
             #line default

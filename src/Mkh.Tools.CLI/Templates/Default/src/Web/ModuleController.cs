@@ -15,7 +15,7 @@ namespace Mkh.Tools.CLI.Templates.Default.src.Web
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Web\ModuleController.tt"
+    #line 1 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Web\ModuleController.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
     public partial class ModuleController : ModuleControllerBase
     {
@@ -27,14 +27,14 @@ namespace Mkh.Tools.CLI.Templates.Default.src.Web
         {
             this.Write("using Microsoft.AspNetCore.Mvc;\r\nusing Mkh.Module.Web;\r\n\r\nnamespace Mkh.Mod.");
             
-            #line 5 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Web\ModuleController.tt"
+            #line 5 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Web\ModuleController.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code));
             
             #line default
             #line hidden
             this.Write(".Web;\r\n\r\n[Area(\"");
             
-            #line 7 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Web\ModuleController.tt"
+            #line 7 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\src\Web\ModuleController.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code));
             
             #line default

@@ -15,7 +15,7 @@ namespace Mkh.Tools.CLI.Templates.Default
     /// Class to produce the template output
     /// </summary>
     
-    #line 1 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\Dockerfile.tt"
+    #line 1 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\Dockerfile.tt"
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.TextTemplating", "17.0.0.0")]
     public partial class Dockerfile : DockerfileBase
     {
@@ -28,7 +28,7 @@ namespace Mkh.Tools.CLI.Templates.Default
             this.Write("FROM mcr.microsoft.com/dotnet/aspnet:6.0-focal AS base\r\nWORKDIR /app\r\nEXPOSE 80\r\n" +
                     "\r\n# 打包前端\r\nFROM node:16 AS ui\r\nWORKDIR /src\r\nCOPY . .\r\nWORKDIR /src/src/UI/");
             
-            #line 10 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\Dockerfile.tt"
+            #line 10 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\Dockerfile.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code.ToLower()));
             
             #line default
@@ -51,7 +51,7 @@ COPY --from=build /src/publish .
 COPY --from=ui /src/src/WebHost/wwwroot ./wwwroot
 ENTRYPOINT [""dotnet"", ""Mkh.Mod.");
             
-            #line 26 "D:\Mkh\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\Dockerfile.tt"
+            #line 26 "D:\MyProject\MKH\Mkh.Tools.CLI\src\Mkh.Tools.CLI\Templates\Default\Dockerfile.tt"
             this.Write(this.ToStringHelper.ToStringWithCulture(_model.Module.Code));
             
             #line default
